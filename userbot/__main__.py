@@ -67,7 +67,7 @@ if Checker == False:
     print(
 "عذراً لديك حظر مؤقت .. حاول التنصيب بعد 24 ساعـة"
 )
-    zedthon.disconnect()
+    zedub.disconnect()
     sys.exit()
 zedub.loop.run_until_complete(externalrepo())
 
