@@ -69,7 +69,6 @@ if Checker == False:
 )
     zedub.disconnect()
     sys.exit()
-zedub.loop.run_until_complete(externalrepo())
 
 if len(sys.argv) in {1, 3, 4}:
     try:
