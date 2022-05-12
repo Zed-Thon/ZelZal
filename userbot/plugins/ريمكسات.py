@@ -21,7 +21,7 @@ plugin_category = "البحث"
     command=("ريماكس", plugin_category),
     info={
         "header": "ريمكسـات اغـانـي قصيـره",
-        "usage": "{tr}ريماكس + كلمـة",
+        "الاستـخـدام": "{tr}ريماكس + كلمـة",
     },
 )
 async def remaxzedthon(zedrm):
@@ -46,7 +46,7 @@ async def remaxzedthon(zedrm):
     command=("ريمكس", plugin_category),
     info={
         "header": "ريمكسـات اغـانـي قصيـره",
-        "usage": "{tr}ريمكس + كلمـة",
+        "الاستـخـدام": "{tr}ريمكس + كلمـة",
     },
 )
 async def zed(event):
