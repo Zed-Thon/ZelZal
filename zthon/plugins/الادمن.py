@@ -19,7 +19,7 @@ from telethon.tl.types import (
 )
 from telethon.utils import get_display_name
 
-from userbot import zedub
+from zthon import zedub
 
 from ..core.data import _sudousers_list
 from ..core.logger import logging
