@@ -122,7 +122,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
     if HEROKU_APP_NAME is None:
         await event.edit(
             "`Please set up the` **HEROKU_APP_NAME** `Var`"
-            " to be able to deploy your userbot...`"
+            " to be able to deploy your zthon...`"
         )
         repo.__del__()
         return
@@ -221,7 +221,7 @@ async def upstream(event):
     except InvalidGitRepositoryError as error:
         if conf is None:
             return await event.edit(
-                f"`Unfortunately, the directory {error} does not seem to be a git repository.\nBut we can fix that by force updating the userbot using .update now.`"
+                f"`Unfortunately, the directory {error} does not seem to be a git repository.\nBut we can fix that by force updating the zthon using .update now.`"
             )
 
         repo = Repo.init()
