@@ -1,6 +1,6 @@
 # ©source Zed - @ZlZZl77
-from userbot.core.logger import logging
-from userbot import zedub
+from zthon.core.logger import logging
+from zthon import zedub
 from ..Config import Config
 from ..core.managers import edit_delete, edit_or_reply
 
