@@ -1,5 +1,5 @@
 #𝙕𝙚𝙙𝙏𝙝𝙤𝙣 ®
-# Port to UserBot
+# Port to ZThon
 # modified by @ZedThon
 # Copyright (C) 2022.
 
@@ -9,7 +9,7 @@ import os
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from userbot import zedub
+from zthon import zedub
 
 from ..core.managers import edit_delete, edit_or_reply
 from ..helpers.utils import reply_id
