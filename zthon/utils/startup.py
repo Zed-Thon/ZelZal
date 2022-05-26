@@ -1,4 +1,4 @@
-# ZedThon - UserBot
+# ZedThon - zthon
 # Copyright (C) 2022 ZedThon . All Rights Reserved
 #< https://t.me/ZedThon >
 # This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
@@ -16,7 +16,7 @@ from pathlib import Path
 from telethon import Button, functions, types, utils
 from telethon.tl.functions.channels import JoinChannelRequest
 
-from userbot import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
+from zthon import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
 
 from ..Config import Config
 from ..core.logger import logging
