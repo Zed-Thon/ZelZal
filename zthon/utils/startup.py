@@ -143,7 +143,7 @@ async def mybot():
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_file("@BotFather", "userbot/zilzal/logozed.jpg")
+            await bot.send_file("@BotFather", "zthon/zilzal/logozed.jpg")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setabouttext")
             await asyncio.sleep(1)
@@ -335,7 +335,7 @@ async def verifyLoggerGroup():
         flag = True
     if flag:
         executable = sys.executable.replace(" ", "\\ ")
-        args = [executable, "-m", "userbot"]
+        args = [executable, "-m", "zthon"]
         os.execle(executable, *args, os.environ)
         sys.exit(0)
 
@@ -366,4 +366,4 @@ async def install_externalrepo(repo, branch, cfolder):
     if os.path.exists(os.path.join(cfolder, "requirements.txt")):
         rpath = os.path.join(cfolder, "requirements.txt")
         await runcmd(f"pip3 install --no-cache-dir {rpath}")
-    await load_plugins(folder="userbot", extfolder=cfolder)
+    await load_plugins(folder="zthon", extfolder=cfolder)
