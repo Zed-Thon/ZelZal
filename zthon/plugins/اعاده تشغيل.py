@@ -2,7 +2,7 @@ import os
 from asyncio.exceptions import CancelledError
 from time import sleep
 
-from userbot import zedub
+from zthon import zedub
 
 from ..core.logger import logging
 from ..core.managers import edit_or_reply
