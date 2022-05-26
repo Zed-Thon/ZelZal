@@ -25,7 +25,7 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from userbot import zedub
+from zthon import zedub
 
 from ..core.managers import edit_delete, edit_or_reply
 from ..helpers.functions import animator, crop_and_divide
