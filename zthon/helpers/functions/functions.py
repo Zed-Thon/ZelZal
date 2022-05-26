@@ -304,7 +304,7 @@ def higlighted_text(
         else (int(1024 * raw_width / raw_height), 1024)
     )
     if font_name is None:
-        font_name = "userbot/helpers/styles/impact.ttf"
+        font_name = "zthon/helpers/styles/impact.ttf"
     font = ImageFont.truetype(font_name, font_size)
     extra_width, extra_height = position
     # get text size
