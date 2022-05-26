@@ -11,7 +11,7 @@ from telethon.errors import QueryIdInvalidError
 from telethon.events import CallbackQuery, InlineQuery
 from youtubesearchpython import VideosSearch
 
-from userbot import zedub
+from zthon import zedub
 
 from ..Config import Config
 from ..helpers.functions import rand_key
@@ -347,7 +347,7 @@ async def inline_handler(event):  # sourcery no-metrics
             query = query[7:]
             user, txct = query.split(" ", 1)
             builder = event.builder
-            troll = os.path.join("./userbot", "troll.txt")
+            troll = os.path.join("./zthon", "troll.txt")
             try:
                 jsondata = json.load(open(troll))
             except Exception:
@@ -397,7 +397,7 @@ async def inline_handler(event):  # sourcery no-metrics
             query = query[7:]
             user, txct = query.split(" ", 1)
             builder = event.builder
-            secret = os.path.join("./userbot", "secrets.txt")
+            secret = os.path.join("./zthon", "secrets.txt")
             try:
                 jsondata = json.load(open(secret))
             except Exception:
@@ -446,7 +446,7 @@ async def inline_handler(event):  # sourcery no-metrics
         elif match3:
             query = query[5:]
             builder = event.builder
-            hide = os.path.join("./userbot", "hide.txt")
+            hide = os.path.join("./zthon", "hide.txt")
             try:
                 jsondata = json.load(open(hide))
             except Exception:
