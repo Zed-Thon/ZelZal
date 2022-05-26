@@ -16,8 +16,8 @@ from .utils import (
 
 LOGS = logging.getLogger("Zelzal")
 
-print(userbot.__copyright__)
-print(f"المرخصة بموجب شروط  {userbot.__license__}")
+print(zthon.__copyright__)
+print(f"المرخصة بموجب شروط  {zthon.__license__}")
 
 cmdhr = Config.COMMAND_HAND_LER
 
