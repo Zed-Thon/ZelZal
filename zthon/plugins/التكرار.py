@@ -6,7 +6,7 @@ from telethon.tl.functions.messages import GetStickerSetRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from telethon.utils import get_display_name
 
-from userbot import zedub
+from zthon import zedub
 
 from ..core.managers import edit_delete, edit_or_reply
 from ..helpers.tools import media_type
