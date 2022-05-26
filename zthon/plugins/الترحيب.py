@@ -2,8 +2,8 @@
 from telethon import events
 from telethon.utils import get_display_name
 
-from userbot import zedub
-from userbot.core.logger import logging
+from zthon import zedub
+from zthon.core.logger import logging
 
 from ..core.managers import edit_delete, edit_or_reply
 from ..sql_helper.globals import addgvar, delgvar, gvarstatus
