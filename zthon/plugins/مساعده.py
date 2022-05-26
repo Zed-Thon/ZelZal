@@ -1,6 +1,6 @@
 from telethon import functions
 
-from userbot import zedub
+from zthon import zedub
 
 from ..Config import Config
 from ..core import CMD_INFO, GRP_INFO, PLG_INFO
