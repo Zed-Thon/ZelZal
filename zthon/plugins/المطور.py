@@ -251,7 +251,7 @@ async def _(event):  # sourcery no-metrics
         for plugin in input_str:
             if plugin not in PLG_INFO:
                 errors += (
-                    f"`{plugin}` __There is no such plugin in your CatUserbot__.\n"
+                    f"`{plugin}` __There is no such plugin in your ZThon__.\n"
                 )
             else:
                 loadcmds += PLG_INFO[plugin]
@@ -267,7 +267,7 @@ async def _(event):  # sourcery no-metrics
                 loadcmds.append(cmd)
     for cmd in loadcmds:
         sqllist.add_to_list("sudo_enabled_cmds", cmd)
-    result = f"__Successfully enabled __ `{len(loadcmds)}` __ for CatUserbot sudo.__\n"
+    result = f"__Successfully enabled __ `{len(loadcmds)}` __ for ZThon sudo.__\n"
     output = (
         result + "**✾╎يتم الان اعـادة تشغيـل بـوت زدثــون انتظـر 2-1 دقيقـه ▬▭ ...**\n"
     )
