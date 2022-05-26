@@ -2,8 +2,8 @@ import os
 import shutil
 from asyncio import sleep
 
-from userbot import zedub
-from userbot.core.logger import logging
+from zthon import zedub
+from zthon.core.logger import logging
 from . import BOTLOG, BOTLOG_CHATID
 plugin_category = "الادوات"
 LOGS = logging.getLogger(__name__)
