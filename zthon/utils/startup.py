@@ -46,7 +46,7 @@ DEV = 1895219306
 
 async def setup_bot():
     """
-    To set up bot for userbot
+    To set up bot for zthon
     """
     try:
         await zedub.connect()
@@ -194,8 +194,8 @@ async def load_plugins(folder, extfolder=None):
         path = f"{extfolder}/*.py"
         plugin_path = extfolder
     else:
-        path = f"userbot/{folder}/*.py"
-        plugin_path = f"userbot/{folder}"
+        path = f"zthon/{folder}/*.py"
+        plugin_path = f"zthon/{folder}"
     files = glob.glob(path)
     files.sort()
     success = 0
