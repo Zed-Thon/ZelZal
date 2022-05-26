@@ -4,7 +4,7 @@ import re
 
 from telethon.events import CallbackQuery
 
-from userbot import zedub
+from zthon import zedub
 
 
 @zedub.tgbot.on(CallbackQuery(data=re.compile(b"hide_(.*)")))
