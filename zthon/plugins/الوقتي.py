@@ -42,9 +42,9 @@ FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 normzltext = "1234567890"
 namerzfont = gvarstatus("ZI_FN") or "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬"
 
-autopic_path = os.path.join(os.getcwd(), "userbot", "original_pic.png")
-digitalpic_path = os.path.join(os.getcwd(), "userbot", "digital_pic.png")
-autophoto_path = os.path.join(os.getcwd(), "userbot", "photo_pfp.png")
+autopic_path = os.path.join(os.getcwd(), "zthon", "original_pic.png")
+digitalpic_path = os.path.join(os.getcwd(), "zthon", "digital_pic.png")
+autophoto_path = os.path.join(os.getcwd(), "zthon", "photo_pfp.png")
 
 digitalpfp = (
     gvarstatus("DIGITAL_PIC") or "https://telegra.ph/file/aeaebe33b1f3988a0b690.jpg"
@@ -147,7 +147,7 @@ async def digitalpicloop():
         current_time = datetime.now().strftime("  %I:%M ")
         img = Image.open(autophoto_path)
         drawn_text = ImageDraw.Draw(img)
-        zed = str(base64.b64decode("dXNlcmJvdC9oZWxwZXJzL3N0eWxlcy9aVGhvbi50dGY="))[
+        zed = str(base64.b64decode("enRob24vaGVscGVycy9zdHlsZXMvWlRob24udHRm"))[
             2:36
         ]
         fnt = ImageFont.truetype(zed, 70)
