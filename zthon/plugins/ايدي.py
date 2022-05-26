@@ -1,5 +1,5 @@
 """
-ZThon - UserBot
+ZThon - ZelZal
 """
 
 import html
@@ -9,8 +9,8 @@ from requests import get
 from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 
-from userbot import zedub
-from userbot.core.logger import logging
+from zthon import zedub
+from zthon.core.logger import logging
 
 from ..Config import Config
 from ..core.managers import edit_or_reply
