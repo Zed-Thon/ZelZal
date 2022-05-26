@@ -9,7 +9,7 @@ import urllib3
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
-from userbot import HEROKU_APP, UPSTREAM_REPO_URL, zedub
+from zthon import HEROKU_APP, UPSTREAM_REPO_URL, zedub
 
 from ..Config import Config
 from ..core.logger import logging
