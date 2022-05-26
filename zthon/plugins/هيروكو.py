@@ -13,7 +13,7 @@ import heroku3
 import requests
 import urllib3
 
-from userbot import zedub
+from zthon import zedub
 
 from ..Config import Config
 from ..core.managers import edit_delete, edit_or_reply
