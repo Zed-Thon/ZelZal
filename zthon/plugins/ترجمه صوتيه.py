@@ -10,7 +10,7 @@ from datetime import datetime
 
 from gtts import gTTS
 
-from userbot import zedub
+from zthon import zedub
 
 from ..core.managers import edit_delete, edit_or_reply
 from . import deEmojify, reply_id
