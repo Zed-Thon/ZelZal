@@ -3,7 +3,7 @@ import re
 
 from telethon.utils import get_display_name
 
-from userbot import zedub
+from zthon import zedub
 
 from ..core.managers import edit_or_reply
 from ..sql_helper.filter_sql import (
