@@ -7,8 +7,8 @@ import os
 import random
 from urllib.parse import quote_plus
 from collections import deque
-from userbot.core.logger import logging
-from userbot import zedub
+from zthon.core.logger import logging
+from zthon import zedub
 from ..Config import Config
 from ..core.managers import edit_delete, edit_or_reply
 from . import ALIVE_NAME, deEmojify, mention
