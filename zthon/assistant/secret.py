@@ -4,14 +4,14 @@ import re
 
 from telethon.events import CallbackQuery
 
-from userbot import zedub
+from zthon import zedub
 
 
 @zedub.tgbot.on(CallbackQuery(data=re.compile(b"secret_(.*)")))
 async def on_plug_in_callback_query_handler(event):
     timestamp = int(event.pattern_match.group(1).decode("UTF-8"))
-    if os.path.exists("./userbot/secrets.txt"):
-        jsondata = json.load(open("./userbot/secrets.txt"))
+    if os.path.exists("./zthon/secrets.txt"):
+        jsondata = json.load(open("./zthon/secrets.txt"))
         try:
             message = jsondata[f"{timestamp}"]
             userid = message["userid"]
