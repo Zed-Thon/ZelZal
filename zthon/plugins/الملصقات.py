@@ -748,11 +748,11 @@ async def pussycat(args):
             "ايموجي": "to use custom emoji by default ▫️ is emoji.",
         },
         "الاستـخـدام": [
-            "{tr}gridpack <packname>",
-            "{tr}gridpack -e👌 <packname>",
+            "{tr}حزمة <packname>",
+            "{tr}حزمة -e👌 <packname>",
         ],
         "مثــال": [
-            "{tr}gridpack -e👌 CatUserbot",
+            "{tr}حزمة -e👌 ZThon",
         ],
     },
 )
@@ -780,7 +780,7 @@ async def pic2packcmd(event):
     except Exception:
         emoji = "▫️"
     chat = "@Stickers"
-    name = "CatUserbot_" + "".join(
+    name = "ZThon_" + "".join(
         random.choice(list(string.ascii_lowercase + string.ascii_uppercase))
         for _ in range(16)
     )
