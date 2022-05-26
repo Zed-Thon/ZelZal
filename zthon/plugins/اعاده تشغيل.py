@@ -79,7 +79,7 @@ async def _(event):
     pattern="نوم( [0-9]+)?$",
     command=("نوم", plugin_category),
     info={
-        "header": "Userbot will stop working for the mentioned time.",
+        "header": "ZThon will stop working for the mentioned time.",
         "الاستـخـدام": "{tr}sleep <seconds>",
         "مثــال": "{tr}sleep 60",
     },
