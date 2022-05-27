@@ -342,7 +342,7 @@ async def _(event):  # sourcery no-metrics
         for plugin in input_str:
             if plugin not in PLG_INFO:
                 errors += (
-                    f"`{plugin}` __There is no such plugin in your CatUserbot__.\n"
+                    f"`{plugin}` __There is no such plugin in your ZThon__.\n"
                 )
             else:
                 flagcmds += PLG_INFO[plugin]
@@ -351,7 +351,7 @@ async def _(event):  # sourcery no-metrics
         flagcmds = []
         for cmd in input_str:
             if cmd not in CMD_INFO:
-                errors += f"`{cmd}` __There is no such command in your CatUserbot__.\n"
+                errors += f"`{cmd}` __There is no such command in your ZThon__.\n"
             elif cmd not in sudocmds:
                 errors += f"`{cmd}` __Is already disabled for sudo users__.\n"
             else:
