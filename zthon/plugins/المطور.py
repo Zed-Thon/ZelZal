@@ -361,7 +361,7 @@ async def _(event):  # sourcery no-metrics
         if sqllist.is_in_list("sudo_enabled_cmds", cmd):
             count += 1
             sqllist.rm_from_list("sudo_enabled_cmds", cmd)
-    result = f"__Successfully disabled __ `{count}` __ for CatUserbot sudo.__\n"
+    result = f"__Successfully disabled __ `{count}` __ for ZThon sudo.__\n"
     output = (
         result + "**Bot is reloading to apply the changes. Please wait for a minute**\n"
     )
