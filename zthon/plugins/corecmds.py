@@ -13,7 +13,7 @@ thumb_image_path = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, "thumb_image.jpg"
 
 
 def plug_checker(plugin):
-    plug_path = f"./userbot/plugins/{plugin}.py"
+    plug_path = f"./zthon/plugins/{plugin}.py"
     if not os.path.exists(plug_path):
         plug_path = f"./xtraplugins/{plugin}.py"
     if not os.path.exists(plug_path):
@@ -36,7 +36,7 @@ async def install(event):
         try:
             downloaded_file_name = await event.client.download_media(
                 await event.get_reply_message(),
-                "userbot/plugins/",
+                "zthon/plugins/",
             )
             if "(" not in downloaded_file_name:
                 path1 = Path(downloaded_file_name)
