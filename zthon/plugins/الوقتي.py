@@ -42,9 +42,9 @@ FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 normzltext = "1234567890"
 namerzfont = Config.ZI_FN or "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬"
 
-autopic_path = os.path.join(os.getcwd(), "userbot", "original_pic.png")
-digitalpic_path = os.path.join(os.getcwd(), "userbot", "digital_pic.png")
-autophoto_path = os.path.join(os.getcwd(), "userbot", "photo_pfp.png")
+autopic_path = os.path.join(os.getcwd(), "zthon", "original_pic.png")
+digitalpic_path = os.path.join(os.getcwd(), "zthon", "digital_pic.png")
+autophoto_path = os.path.join(os.getcwd(), "zthon", "photo_pfp.png")
 
 digitalpfp = Config.DIGITAL_PIC or "https://telegra.ph/file/82f009810be85e941053b.jpg"
 
