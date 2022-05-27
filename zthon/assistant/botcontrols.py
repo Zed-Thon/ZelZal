@@ -3,7 +3,7 @@ from datetime import datetime
 
 from telethon.errors import BadRequestError, FloodWaitError, ForbiddenError
 
-from userbot import zedub
+from zthon import zedub
 
 from ..Config import Config
 from ..core.logger import logging
