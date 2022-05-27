@@ -25,14 +25,14 @@ GIT_TEMP_DIR = "./temp/"
     pattern="repo$",
     command=("repo", plugin_category),
     info={
-        "header": "Source code link of userbot",
+        "header": "Source code link of ZThon",
         "usage": [
             "{tr}repo",
         ],
     },
 )
 async def source(e):
-    "Source code link of userbot"
+    "Source code link of ZThon"
     await edit_or_reply(
         e,
         "Click [here](https://t.me/ZedThon) to open this bot source code\
