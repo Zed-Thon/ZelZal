@@ -1,5 +1,5 @@
-# Zedthon - UserBot
-# Copyright (C) 2022 Zedthon . All Rights Reserved
+# Zed-Thon
+# Copyright (C) 2022 Zed-Thon . All Rights Reserved
 #
 # This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
 # PLease read the GNU Affero General Public License in
