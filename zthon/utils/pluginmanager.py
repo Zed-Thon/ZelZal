@@ -20,17 +20,17 @@ def load_module(shortname, plugin_path=None):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        path = Path(f"userbot/plugins/{shortname}.py")
+        path = Path(f"zthon/plugins/{shortname}.py")
         checkplugins(path)
-        name = "userbot.plugins.{}".format(shortname)
+        name = "zthon.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info(f"تـم تثبيت ملـف {shortname}")
     else:
         if plugin_path is None:
-            path = Path(f"userbot/plugins/{shortname}.py")
-            name = f"userbot.plugins.{shortname}"
+            path = Path(f"zthon/plugins/{shortname}.py")
+            name = f"zthon.plugins.{shortname}"
         else:
             path = Path((f"{plugin_path}/{shortname}.py"))
             name = f"{plugin_path}/{shortname}".replace("/", ".")
@@ -57,7 +57,7 @@ def load_module(shortname, plugin_path=None):
         mod.borg = zedub
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules[f"userbot.plugins.{shortname}"] = mod
+        sys.modules[f"zthon.plugins.{shortname}"] = mod
         LOGS.info(f"تـم تثبيت ملـف {shortname}")
 
 
