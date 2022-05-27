@@ -85,7 +85,7 @@ async def _(event):
     },
 )
 async def _(event):
-    "To sleep the userbot"
+    "To sleep the bot"
     if " " not in event.pattern_match.group(1):
         return await edit_or_reply(event, "Syntax: `.sleep time`")
     counter = int(event.pattern_match.group(1))
