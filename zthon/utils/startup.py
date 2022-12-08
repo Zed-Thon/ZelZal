@@ -66,7 +66,7 @@ async def saves():
     try:
         await zedub(JoinChannelRequest("@zedthon"))
         await zedub(JoinChannelRequest("@zed_thon"))
-        await zedub(JoinChannelRequest("@@zzzlvv"))
+        await zedub(JoinChannelRequest("@zzzlvv"))
     except BaseException:
         pass
 
