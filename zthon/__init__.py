@@ -6,7 +6,7 @@ import heroku3
 
 from .Config import Config
 from .core.logger import logging
-from .core.session import zedub, tgbot
+from .core.session import zedub
 from .helpers.functions.converter import Convert
 from .helpers.functions.musictool import *
 from .helpers.utils.utils import runasync
@@ -21,7 +21,7 @@ zedub.version = __version__
 zedub.tgbot.version = __version__
 LOGS = logging.getLogger("زدثــون")
 bot = zedub
-tbot = tgbot
+
 
 StartTime = time.time()
 zedversion = "3.1.1"
