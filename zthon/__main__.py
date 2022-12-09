@@ -10,6 +10,7 @@ from .core.session import zedub
 from .utils import mybot
 from .utils import (
     add_bot_to_logger_group,
+    install_externalrepo,
     load_plugins,
     setup_bot,
     startupmessage,
