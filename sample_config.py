@@ -35,7 +35,7 @@ class Config(object):
     # External plugins repo
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
     if EXTERNAL_REPO and (EXTERNAL_REPO.lower() != "no") and not url(EXTERNAL_REPO):
-        EXTERNAL_REPO = "https://github.com/TgCatUB/CatPlugins"
+        EXTERNAL_REPO = "https://github.com/Zed-Thon/ZedPlugins"
     # if you need badcat plugins use the following vars
     OLDZED = os.environ.get("OLDZED", "no")
     OLDZED = bool(OLDZED and (OLDZED.lower() != "no"))
