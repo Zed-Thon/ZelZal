@@ -54,7 +54,7 @@ async def zed_meme(CNG_FONTS, topString, bottomString, filename, endname):
     img = Image.open(filename)
     imageSize = img.size
     # find biggest font size that works
-    fontSize = int(imageSize[1] / 5)
+    fontSize = int(imageSize[1] / 10)
     font = ImageFont.truetype(CNG_FONTS, fontSize)
     topTextSize = font.getsize(topString)
     bottomTextSize = font.getsize(bottomString)
@@ -106,7 +106,7 @@ async def zed_meeme(upper_text, lower_text, CNG_FONTS, picture_name, endname):
     lower_margin = MARGINS[lower_text.count("\n")]
     text_draw = Drawing()
     text_draw.font = join(getcwd(), CNG_FONTS)
-    text_draw.font_size = 100
+    text_draw.font_size = 50
     text_draw.text_alignment = "center"
     text_draw.stroke_color = Color("black")
     text_draw.stroke_width = 3
