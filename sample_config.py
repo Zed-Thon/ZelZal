@@ -12,6 +12,7 @@ from validators.url import url
 class Config(object):
     LOGGER = True
     # MUST NEEDED VARS
+    OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", None)
     # set this value with your name
     ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
     # Get the values for following 2 from my.telegram.org
