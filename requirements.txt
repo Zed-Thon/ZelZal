@@ -78,6 +78,6 @@ wget
 youtube_dl
 youtube-search
 youtube-search-python==1.4.9
-yt_dlp
+yt-dlp==2023.02.17
 
 git+https://github.com/buddhhu/img2html.git
