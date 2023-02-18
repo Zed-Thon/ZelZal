@@ -69,7 +69,7 @@ sqlalchemy==1.3.23
 telegraph==2.1.0
 telethon-tgcrypto
 urlextract
-user_agentgit+https://github.com/Jisan09/search-engine-parsergit+https://github.com/Jisan09/search-engine-parser
+user_agent
 validators
 vcsi
 wand
