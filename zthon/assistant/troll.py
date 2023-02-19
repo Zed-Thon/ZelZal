@@ -15,7 +15,7 @@ async def on_plug_in_callback_query_handler(event):
         try:
             message = jsondata[f"{timestamp}"]
             userid = message["userid"]
-            ids = userid
+            ids = [userid]
             if event.query.user_id in ids:
                 reply_pop_up_alert = (
                     "مطـي الرسـاله مـو الك 🧑🏻‍🦯🦓"
