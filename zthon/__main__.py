@@ -18,7 +18,7 @@ from .utils import (
 )
 
 
-LOGS = logging.getLogger("Zelzal")
+LOGS = logging.getLogger("up")
 cmdhr = Config.COMMAND_HAND_LER
 
 print(zthon.__copyright__)
@@ -27,7 +27,7 @@ print(f"المرخصة بموجب شروط  {zthon.__license__}")
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
-    LOGS.info("⌭ بـدء تنزيـل زدثــون ⌭")
+    LOGS.info("⌭ بـدء تنزيـل زين ⌭")
     zedub.loop.run_until_complete(setup_bot())
     LOGS.info("⌭ بـدء تشغيـل البـوت ⌭")
 except Exception as e:
@@ -55,7 +55,7 @@ async def startup_process():
     await verifyLoggerGroup()
     await load_plugins("plugins")
     await load_plugins("assistant")
-    LOGS.info(f"⌔┊تـم تنصيـب زدثــون . . بنجـاح ✓")
+    LOGS.info(f"⌔┊تـم تنصيـب cr . . بنجـاح ✓")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
