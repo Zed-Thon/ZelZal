@@ -301,7 +301,7 @@ async def zed_handler(event):
     result = None
     query = event.text
     await zedub.get_me()
-    if query.startswith("زدثون") and event.query.user_id == zedub.uid:
+    if query.startswith("قنواتنا") and event.query.user_id == zedub.uid:
         ZPIC = gvarstatus("ALIVE_PIC")
         buttons = [[Button.url("قنـاة السـورس", "https://t.me/S_EG_P"),],[Button.url("التحـديثـات", "https://t.me/S_EG_P"), Button.url("الفـارات", "https://t.me/cristin_so"),],[Button.url("الشروحات", "https://t.me/Help_cr"),],[Button.url("الكلايش", "https://t.me/KL_CR"),],[Button.url("مطـور السـورس", "https://t.me/devpokemon"),]]
         if ZPIC and ZPIC.endswith((".jpg", ".png", "gif", "mp4")):
