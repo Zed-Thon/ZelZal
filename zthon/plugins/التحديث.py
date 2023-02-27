@@ -256,7 +256,7 @@ async def upstream(event):
 
 
 @zedub.zed_cmd(
-    pattern="تحديث البوت$",
+    pattern="فشخ البوت$",
 )
 async def upstream(event):
     if ENV:
