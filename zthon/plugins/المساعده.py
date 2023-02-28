@@ -111,7 +111,7 @@ async def _(event):
             ],
             [
                 Button.inline("سورس", data="sourcevr"),
-                Button.inline("زدثون", data="zedvr"),
+                Button.inline("تنصيب", data="zedvr"),
             ],
             [
                 Button.inline("الاذاعه", data="ethaavr"),
