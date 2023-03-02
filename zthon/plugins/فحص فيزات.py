@@ -29,11 +29,11 @@ async def song2(event):
     async with event.client.conversation(chat) as conv:
         try:
             gool = "/chk {}".format(been)
-            await conv.send_message("/chk")
+            await conv.send_message("/chk {}")
             await asyncio.sleep(15)
             await conv.send_message(gool)
             await asyncio.sleep(15)
-            await conv.send_message("/chk")
+            await conv.send_message("/chk {}")
         except YouBlockedUserError:
             await zedub(unblock("@SDBB_Bot"))
             gool = "/chk {}".format(been)
@@ -55,11 +55,11 @@ async def song2(event):
     async with event.client.conversation(chat) as conv:
         try:
             gool = "/gen {}".format(been)
-            await conv.send_message("/gen")
+            await conv.send_message("/gen {}")
             await asyncio.sleep(15)
             await conv.send_message(gool)
             await asyncio.sleep(15)
-            await conv.send_message("/gen")
+            await conv.send_message("/gen {}")
         except YouBlockedUserError:
             await zedub(unblock("SDBB_Bot"))
             gool = "/gen {}".format(been)
@@ -81,11 +81,11 @@ async def song2(event):
     async with event.client.conversation(chat) as conv:
         try:
             gool = "/bin {}".format(been)
-            await conv.send_message("/bin")
+            await conv.send_message("/bin {}")
             await asyncio.sleep(15)
             await conv.send_message(gool)
             await asyncio.sleep(15)
-            await conv.send_message("/bin")
+            await conv.send_message("/bin {}")
         except YouBlockedUserError:
             await zedub(unblock("SDBB_Bot"))
             gool = "/bin {}".format(been)
