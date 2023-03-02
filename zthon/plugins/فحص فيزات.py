@@ -22,7 +22,7 @@ from ..core.managers import edit_or_reply
 
 @zedub.zed_cmd(pattern="chk(?:\s|$)([\s\S]*)")
 async def song2(event):
-    been = event.pattern_match.group(1)
+    been = event.pattern_match.group(5)
     chat = "@SDBB_Bot"
     reply_id_ = await reply_id(event)
     zed = await edit_or_reply(event, f"**- جـارِ فحص البطاقه ع الـ Bin {been}  💳...**")
@@ -48,7 +48,7 @@ async def song2(event):
 
 @zedub.zed_cmd(pattern="توليد(?:\s|$)([\s\S]*)")
 async def song2(event):
-    been = event.pattern_match.group(1)
+    been = event.pattern_match.group(5)
     chat = "@SDBB_Bot"
     reply_id_ = await reply_id(event)
     zed = await edit_or_reply(event, f"**- جـارِ توليـد 10 بطاقـات ع الـ Bin {been}  💳...**")
@@ -74,7 +74,7 @@ async def song2(event):
 
 @zedub.zed_cmd(pattern="بين(?:\s|$)([\s\S]*)")
 async def song2(event):
-    been = event.pattern_match.group(1)
+    been = event.pattern_match.group(5)
     chat = "@SDBB_Bot"
     reply_id_ = await reply_id(event)
     zed = await edit_or_reply(event, f"**- جـارِ فحص Bin {been}  💳...**")
