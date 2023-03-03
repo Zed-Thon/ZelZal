@@ -49,134 +49,46 @@ def ibuild_keyboard(buttons):
 
 
 
-
-
-
-
-
-
-
-
 @zedub.tgbot.on(InlineQuery)
-
-
 async def inline_handler(event):  # sourcery no-metrics
-
-
     builder = event.builder
-
-
     result = None
-
-
     query = event.text
-
-
     string = query.lower()
-
-
     query.split(" ", 2)
-
-
     str_y = query.split(" ", 1)
-
-
     string.split()
-
-
     query_user_id = event.query.user_id
-
-
     if query_user_id == Config.OWNER_ID or query_user_id in Config.SUDO_USERS:
-
-
         hmm = re.compile("troll (.*) (.*)")
-
-
         match = re.findall(hmm, query)
-
-
         inf = re.compile("secret (.*) (.*)")
-
-
         match2 = re.findall(inf, query)
-
-
         hid = re.compile("hide (.*)")
-
-
         match3 = re.findall(hid, query)
-
-
         if match or match2 or match3:
-
-
             user_list = []
-
-
             if match3:
-
-
                 sandy = "Chat"
-
-
                 query = query[5:]
-
-
                 info_type = ["hide", "can't", "Read Message "]
-
-
             else:
-
-
                 sandy = ""
-
-
                 if match:
-
-
                     query = query[6:]
-
-
                     info_type = ["troll", "can't", "show message 🔐"]
-
-
                 elif match2:
-
-
                     query = query[7:]
-
-
                     info_type = ["secret", "can", "show message 🔐"]
-
-
                 if "|" in query:
-
-
                     iris, query = query.replace(" |", "|").replace("| ", "|").split("|")
-
-
                     users = iris.split(" ")
-
-
                 else:
-
-
                     user, query = query.split(" ", 1)
-
-
                     users = [user]
-
-
                 for user in users:
-
-
                     usr = int(user) if user.isdigit() else user
-
-
                     try:
-
-
                         u = await event.client.get_entity(usr)
 
 
