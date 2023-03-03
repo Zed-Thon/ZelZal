@@ -90,506 +90,172 @@ async def inline_handler(event):  # sourcery no-metrics
                     usr = int(user) if user.isdigit() else user
                     try:
                         u = await event.client.get_entity(usr)
-
-
                     except ValueError:
-
-
                         return
-
-
                     if u.username:
-
-
                         sandy += f"@{u.username}"
-
-
                     else:
-
-
                         sandy += f"[{u.first_name}](tg://user?id={u.id})"
-
-
                     user_list.append(u.id)
-
-
                     sandy += " "
-
-
                 sandy = sandy[:-1]
-
-
             old_msg = os.path.join("./zthon", f"{info_type[0]}.txt")
-
-
             try:
-
-
                 jsondata = json.load(open(old_msg))
-
-
             except Exception:
-
-
                 jsondata = False
-
-
             timestamp = int(time.time() * 2)
-
-
             new_msg = {
-
-
                 str(timestamp): {"text": query}
-
-
                 if match3
-
-
                 else {"userid": user_list, "text": query}
-
-
             }
-
-
             buttons = [Button.inline(info_type[2], data=f"{info_type[0]}_{timestamp}")]
-
-
             result = builder.article(
-
-
                 title=f"{info_type[0].title()} message  to {sandy}.",
-
-
                 description="Send hidden text in chat."
-
-
                 if match3
-
-
                 else f"Only he/she/they {info_type[1]} open it.",
-
-
                 thumb=get_thumb(f"{info_type[0]}.png"),
-
-
                 text="✖✖✖"
-
-
                 if match3
-
-
                 else f"🔒 A whisper message to {sandy}, Only he/she can open it.",
-
-
                 buttons=buttons,
-
-
             )
-
-
             await event.answer([result] if result else None)
-
-
             if jsondata:
-
-
                 jsondata.update(new_msg)
-
-
                 json.dump(jsondata, open(old_msg, "w"))
-
-
             else:
-
-
                 json.dump(new_msg, open(old_msg, "w"))
-
-
         elif str_y[0].lower() == "ytdl" and len(str_y) == 2:
-
-
             link = get_yt_video_id(str_y[1].strip())
-
-
             found_ = True
-
-
             if link is None:
-
-
                 search = VideosSearch(str_y[1].strip(), limit=15)
-
-
                 resp = (search.result()).get("result")
-
-
                 if len(resp) == 0:
-
-
                     found_ = False
-
-
                 else:
-
-
                     outdata = await result_formatter(resp)
-
-
                     key_ = rand_key()
-
-
                     ytsearch_data.store_(key_, outdata)
-
-
                     buttons = [
-
-
                         Button.inline(
-
-
                             f"1 / {len(outdata)}",
-
-
                             data=f"ytdl_next_{key_}_1",
-
-
                         ),
-
-
                         Button.inline(
-
-
                             "القائمـة 📜",
-
-
                             data=f"ytdl_listall_{key_}_1",
-
-
                         ),
-
-
                         Button.inline(
-
-
                             "⬇️  تحميـل",
-
-
                             data=f'ytdl_download_{outdata[1]["video_id"]}_0',
-
-
                         ),
-
-
                     ]
-
-
                     caption = outdata[1]["message"]
-
-
                     photo = await get_ytthumb(outdata[1]["video_id"])
-
-
             else:
-
-
                 caption, buttons = await download_button(link, body=True)
-
-
                 photo = await get_ytthumb(link)
-
-
             if found_:
-
-
                 markup = event.client.build_reply_markup(buttons)
-
-
                 photo = types.InputWebDocument(
-
-
                     url=photo, size=0, mime_type="image/jpeg", attributes=[]
-
-
                 )
-
-
                 text, msg_entities = await event.client._parse_message_text(
-
-
                     caption, "html"
-
-
                 )
-
-
                 result = types.InputBotInlineResult(
-
-
                     id=str(uuid4()),
-
-
                     type="photo",
-
-
                     title=link,
-
-
                     description="⬇️ اضغـط للتحميـل",
-
-
                     thumb=photo,
-
-
                     content=photo,
-
-
                     send_message=types.InputBotInlineMessageMediaAuto(
-
-
                         reply_markup=markup, message=text, entities=msg_entities
-
-
                     ),
-
-
                 )
-
-
             else:
-
-
                 result = builder.article(
-
-
                     title="Not Found",
-
-
                     text=f"No Results found for `{str_y[1]}`",
-
-
                     description="INVALID",
-
-
                 )
-
-
             try:
-
-
                 await event.answer([result] if result else None)
-
-
             except QueryIdInvalidError:
-
-
                 await event.answer(
-
-
                     [
-
-
                         builder.article(
-
-
                             title="Not Found",
-
-
                             text=f"No Results found for `{str_y[1]}`",
-
-
                             description="INVALID",
-
-
                         )
-
-
                     ]
-
-
                 )
-
-
         elif string == "":
-
-
             results = []
-
-
             results.append(
-
-
                 builder.article(
-
-
                     title="Hide",
-
-
                     description="Send hidden text in chat.\nSyntax: hide",
-
-
                     text="__Send hidden message for spoilers/quote prevention.__",
-
-
                     thumb=get_thumb("hide.png"),
-
-
                     buttons=[
-
-
                         Button.switch_inline(
-
-
                             "Hidden Text", query="hide Text", same_peer=True
-
-
                         )
-
-
                     ],
-
-
                 ),
-
-
             )
-
-
             results.append(
-
-
                 builder.article(
-
-
                     title="Search",
-
-
                     description="Search cmds & plugins\nSyntax: s",
-
-
                     text="__Get help about a plugin or cmd.\n\nMixture of .help & .s__",
-
-
                     thumb=get_thumb("search.jpg"),
-
-
                     buttons=[
-
-
                         Button.switch_inline(
-
-
                             "Search Help", query="s al", same_peer=True
-
-
                         )
-
-
                     ],
-
-
                 ),
-
-
             )
-
-
             results.append(
-
-
                 builder.article(
-
-
                     title="Secret",
-
-
                     description="Send secret message to your friends.\nSyntax: secret @usename",
-
-
                     text="__Send **secret message** which only you & the reciever can see.\n\nFor multiple users give space to username & use **|** to seperate text.__",
-
-
                     thumb=get_thumb("secret.png"),
-
-
                     buttons=[
-
-
                         (
-
-
                             Button.switch_inline(
-
-
                                 "Single", query="secret @username Text", same_peer=True
-
-
                             ),
-
-
                             Button.switch_inline(
-
-
                                 "Multiple",
-
-
                                 query="secret @username @username2 | Text",
-
-
                                 same_peer=True,
-
-
                             ),
-
-
                         )
-
-
                     ],
-
-
                 ),
-
-
             )
-
-
             results.append(
-
-
                 builder.article(
-
-
                     title="Troll",
-
-
                     description="Send troll message to your friends.\nSyntax: toll @usename",
-
-
                     text="__Send **troll message** which everyone can see except the reciever.\n\nFor multiple users give space to username & use **|** to seperate text.__",
-
-
                     thumb=get_thumb("troll.png"),
-
-
                     buttons=[
-
-
                         (
-
-
                             Button.switch_inline(
-
-
                                 "Single", query="troll @username Text", same_peer=True
-
-
                             ),
-
-
                             Button.switch_inline(
-
-
                                 "Multiple",
 
 
