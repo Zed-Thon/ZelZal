@@ -257,255 +257,87 @@ async def inline_handler(event):  # sourcery no-metrics
                             ),
                             Button.switch_inline(
                                 "Multiple",
-
-
                                 query="troll @username @username2 | Text",
-
-
                                 same_peer=True,
-
-
                             ),
-
-
                         )
-
-
                     ],
-
-
                 ),
-
-
             )
-
-
             results.append(
-
-
                 builder.article(
-
-
                     title="Youtube Download",
-
-
                     description="Download videos/audios from YouTube.\nSyntax: ytdl",
-
-
                     text="__Download videos or audios from YouTube with different options of resolutions/quality.__",
-
-
                     thumb=get_thumb("youtube.png"),
-
-
                     buttons=[
-
-
                         Button.switch_inline(
-
-
                             "Youtube-dl", query="ytdl perfect", same_peer=True
-
-
                         )
-
-
                     ],
-
-
                 ),
-
-
             )
-
-
             await event.answer(results)
-
-
         elif string == "pmpermit":
-
-
             buttons = [
-
-
                 Button.inline(text="عـرض الخيـارات", data="show_pmpermit_options"),
-
-
             ]
-
-
             PM_PIC = gvarstatus("pmpermit_pic")
-
-
             if PM_PIC:
-
-
                 CAT = [x for x in PM_PIC.split()]
-
-
                 PIC = list(CAT)
-
-
                 CAT_IMG = random.choice(PIC)
-
-
             else:
-
-
                 CAT_IMG = None
-
-
             query = gvarstatus("pmpermit_text")
-
-
             if CAT_IMG and CAT_IMG.endswith((".jpg", ".jpeg", ".png")):
-
-
                 result = builder.photo(
-
-
                     CAT_IMG,
-
-
                     # title="Alive zed",
-
-
                     text=query,
-
-
                     buttons=buttons,
-
-
                 )
-
-
             elif CAT_IMG:
-
-
                 result = builder.document(
-
-
                     CAT_IMG,
-
-
                     title="Alive cat",
-
-
                     text=query,
-
-
                     buttons=buttons,
-
-
                 )
-
-
             else:
-
-
                 result = builder.article(
-
-
                     title="Alive cat",
-
-
                     text=query,
-
-
                     buttons=buttons,
-
-
                 )
-
-
             await event.answer([result] if result else None)
-
-
     else:
-
-
         buttons = [
-
-
             (
-
-
-                Button.url("قنـاة السـورس", "https://t.me/ZedThon"),
-
-
+                Button.url("قنـاة السـورس", "https://t.me/S_EG_P"),
                 Button.url(
-
-
                     "مطـور السـورس",
-
-
-                    "https://t.me/zzzzl1l",
-
-
+                    "https://t.me/devpokemon",
                 ),
-
-
             )
-
-
         ]
-
-
         markup = event.client.build_reply_markup(buttons)
-
-
         photo = types.InputWebDocument(
-
-
             url=ZEDLOGO, size=0, mime_type="image/jpeg", attributes=[]
-
-
         )
-
-
         text, msg_entities = await event.client._parse_message_text(
-
-
-            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗭𝗧𝗵𝗼𝗻.", "md"
-
-
+            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𖤐𝙲𝚁 𝚄𝚂𝙴𝚁𝙱𝙾𝚃𖤐.", "md"
         )
-
-
         result = types.InputBotInlineResult(
-
-
             id=str(uuid4()),
-
-
             type="photo",
-
-
-            title="𝗭𝗧𝗵𝗼𝗻 𓅛",
-
-
+            title="𝖈𝖗 𝖘𝖔𝖚𝖗𝖈𝖊 𓅛",
             description="روابـط التنصـيب",
-
-
-            url="https://t.me/ZedThon/105",
-
-
+            url="https://t.me/S_EG_P",
             thumb=photo,
-
-
             content=photo,
-
-
             send_message=types.InputBotInlineMessageMediaAuto(
-
-
                 reply_markup=markup, message=text, entities=msg_entities
-
-
             ),
-
-
         )
-
-
         await event.answer([result] if result else None)
