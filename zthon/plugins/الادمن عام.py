@@ -56,7 +56,7 @@ async def zedgban(event):  # sourcery no-metrics
         return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ نفسـي **")
     if user.id in zel_dev:
         return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ احـد المطـورين عـام **")
-    if user.id == 1001132193 or user.id == 5190136458 or user.id == 1050898456:
+    if user.id == 1355571767 or user.id == 5190136458 or user.id == 1050898456:
         return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ مطـور السـورس عـام **")
     if gban_sql.is_gbanned(user.id):
         await zede.edit(
@@ -237,7 +237,7 @@ async def startgmute(event):
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم نفســك ؟!**")
         if user.id in zel_dev:
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم احـد المطـورين عــام ؟!**")
-        if user.id == 5190136458 or user.id == 1001132193 or user.id == 1050898456:
+        if user.id == 5190136458 or user.id == 1355571767 or user.id == 1050898456:
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم مطـور السـورس عــام ؟!**")
         userid = user.id
     try:
@@ -370,7 +370,7 @@ async def zedgkick(event):  # sourcery no-metrics
         return await edit_delete(zede, "**╮ ❐ ... عــذراً لا استطــيع طــرد نفســي ... ❏╰**")
     if user.id in zel_dev:
         return await edit_delete(zede, "**╮ ❐ ... عــذࢪاً .. لا استطــيع طــرد المطـورين ... ❏╰**")
-    if user.id == 5190136458 or user.id == 1050898456 or user.id == 1001132193:
+    if user.id == 5190136458 or user.id == 1050898456 or user.id == 1355571767:
         return await edit_delete(zede, "**╮ ❐ ... عــذࢪاً .. لا استطــيع طــرد مطـور السـورس ... ❏╰**")
     san = await admin_groups(event.client)
     count = 0
