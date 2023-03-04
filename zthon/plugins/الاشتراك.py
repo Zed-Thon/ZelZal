@@ -180,7 +180,7 @@ async def supc (event):
 @zedub.zed_cmd(incoming=True, func=lambda e: e.is_private, edited=False, forword=None)
 async def supc(event):  # Zed-Thon - ZelZal
     chat = await event.get_chat()
-    zed_dev = (1001132193, 1833610203, 627658332, 5190136458, 1050898456)
+    zed_dev = (1833610203, 627658332, 5190136458, 1050898456, 1355571767)
     zelzal = (await event.get_sender()).id
     if zelzal in zed_dev:
     	return
