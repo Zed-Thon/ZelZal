@@ -36,7 +36,7 @@ from . import spamwatch
 
 plugin_category = "العروض"
 LOGS = logging.getLogger(__name__)
-ZED_TEXT = gvarstatus("CUSTOM_ALIVE_TEXT") or "•⎚• مـعلومـات المسـتخـدم مـن بـوت ڪـ‌๋‏ـرسـ‌๋‏ـتـ‌๋‏ـيـ‌๋‏ـن"
+ZED_TEXT = gvarstatus("CUSTOM_ALIVE_TEXT") or "•⎚• مـعلومـات المسـتخـدم مـن بـوت ڤي֠ــ‌ۢـ‌ٰـن֠ــ‌ۢـ‌ٰـﯛ‌م"
 ZEDM = gvarstatus("CUSTOM_ALIVE_EMOJI") or "⎉ "
 ZEDF = gvarstatus("CUSTOM_ALIVE_FONT") or "⋆⎈•━━⊶𐂡•𝖛𝖊𝖓𝖔𝖒 𝖚𝖘𝖊𝖗𝖇𝖔𝖙•𐂡⊷━━•⎈⋆"
 
