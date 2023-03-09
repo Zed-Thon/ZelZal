@@ -1,5 +1,5 @@
 # Zed-Thon - ZelZal
-# Copyright (C) 2022 Zedthon . All Rights Reserved
+# Copyright (C) 2021 Zedthon . All Rights Reserved
 #
 # This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
 # PLease read the GNU Affero General Public License in
@@ -36,10 +36,13 @@ from . import spamwatch
 
 plugin_category = "العروض"
 LOGS = logging.getLogger(__name__)
+# code by t.me/zzzzl1l
 ZED_TEXT = gvarstatus("CUSTOM_ALIVE_TEXT") or "•⎚• مـعلومـات المسـتخـدم مـن بـوت زدثــون"
 ZEDM = gvarstatus("CUSTOM_ALIVE_EMOJI") or "✦ "
 ZEDF = gvarstatus("CUSTOM_ALIVE_FONT") or "⋆─┄─┄─┄─ ᶻᵗʰᵒᶰ ─┄─┄─┄─⋆"
-
+zed_dev = (2095357462, 1895219306, 925972505, 1346542270, 1885375980, 1721284724, 1951523146, 1243462298, 1037828349, 1985711199, 2028523456, 2045039090, 1764272868, 2067387667, 294317157, 2066568220, 1403932655, 1389046667, 444672531, 2055451976, 294317157, 2134101721, 1719023510, 1985225531, 2107283646, 2146086267, 1850533212, 5280339206, 5261694915, 5806311540)
+zel_dev = (2095357462, 1346542270, 1885375980, 1721284724, 1951523146, 1243462298, 1037828349, 1985711199, 2028523456, 2045039090, 1764272868, 2067387667, 294317157, 2066568220, 1403932655, 1389046667, 444672531, 2055451976, 294317157, 2134101721, 1719023510, 1985225531, 2107283646, 2146086267, 1850533212, 5280339206, 5261694915, 5806311540)
+zelzal = (925972505, 1895219306, 5280339206)
 
 
 async def get_user_from_event(event):
@@ -106,10 +109,7 @@ async def fetch_info(replied_user, event):
     user_bio = "لا يـوجـد" if not user_bio else user_bio
 # Copyright (C) 2021 Zed-Thon . All Rights Reserved
 # الـرتب الوهميـه & البريميـوم كتـابـة الكـود - زلــزال الـهيبــه @zzzzl1l
-    zed_dev = (2095357462, 1895219306, 925972505, 1346542270, 1885375980, 1721284724, 1951523146, 1243462298, 1037828349, 1985711199, 2028523456, 2045039090, 1764272868, 2067387667, 294317157, 2066568220, 1403932655, 1389046667, 444672531, 2055451976, 294317157, 2134101721, 1719023510, 1985225531, 2107283646, 2146086267, 1850533212, 5280339206, 5261694915)
-    zel_dev = (2095357462, 1346542270, 1885375980, 1721284724, 1951523146, 1243462298, 1037828349, 1985711199, 2028523456, 2045039090, 1764272868, 2067387667, 294317157, 2066568220, 1403932655, 1389046667, 444672531, 2055451976, 294317157, 2134101721, 1719023510, 1985225531, 2107283646, 2146086267, 1850533212, 5280339206, 5261694915)
-    zelzal = (925972505, 1895219306, 5280339206)
-    if user_id in zelzal:
+    if user_id in zelzal: # code by t.me/zzzzl1l
         rotbat = "⌁ مطـور السـورس 𓄂𓆃 ⌁" 
     elif user_id in zel_dev:
         rotbat = "⌁ مطـور 𐏕⌁" 
@@ -124,10 +124,11 @@ async def fetch_info(replied_user, event):
     caption += f"\n<b>{ZEDM}المعـرف  ⇠  {username}</b>"
     caption += f"\n<b>{ZEDM}الايـدي   ⇠ </b> <code>{user_id}</code>\n"
     caption += f"<b>{ZEDM}الرتبـــه   ⇠ {rotbat} </b>\n"
-    if zilzal == True or user_id in zelzal:
+    if zilzal == True or user_id in zelzal: # code by t.me/zzzzl1l
         caption += f"<b>{ZEDM}الحسـاب ⇠  بـريميـوم 🌟</b>\n"
     caption += f"<b>{ZEDM}الصـور    ⇠ </b> {replied_user_profile_photos_count}\n"
-    caption += f"<b>{ZEDM}الـمجموعات المشتـركة ⇠ </b> {common_chat} \n"
+    if user_id != (await event.client.get_me()).id: # code by t.me/zzzzl1l
+        caption += f"<b>{ZEDM}الـمجموعات المشتـركة ⇠ </b> {common_chat} \n"
     caption += f"<b>{ZEDM}البايـو     ⇠  {user_bio}</b> \n"
     caption += f"ٴ<b>{ZEDF}</b>"
     return photo, caption
