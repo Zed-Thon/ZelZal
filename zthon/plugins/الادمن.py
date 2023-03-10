@@ -708,19 +708,3 @@ async def _iundlt(event):  # sourcery no-metrics
                 )
 
 
-@zedub.on(admin_cmd(pattern="تقيد(?:\s|$)([\s\S]*)",))
-async def endmute(event):
-    user, reason = await get_user_from_event(event)
-    if not user:
-        return
-    catevent = await edit_or_reply(event, "جاري تقيد الشخص ...")
-    try:
-        await event.client.kick_participant(event.chat_id, user.id)
-    except Exception as e:
-        return await catevent.edit(NO_PERM + f"\n{e}")
-    if reason:
-        await catevent.edit(            f"تم تقيد الشخص : [{user.first_name}](tg://user?id={user.id}) "        )
-    else:
-        await catevent.edit(f"تم تقيد الشخص : [{user.first_name}](tg://user?id={user.id}) ")
-    if BOTLOG:
-        await event.client.send_message(            BOTLOG_CHATID,            "#التقيد\n"            f"الشخص : [{user.first_name}](tg://user?id={user.id})\n"            f"المحادثه : {get_display_name(await event.get_chat())}({event.chat_id})\n",        )
