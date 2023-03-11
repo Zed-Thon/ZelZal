@@ -95,7 +95,7 @@ async def stop_tagall(event):
     return await edit_or_reply(event, '**⎉╎تم إيقـاف التـاك .. بنجـاح ✓**')
 
 
-@zedub.zed_cmd(pattern="تاك?(.*)")
+@zedub.zed_cmd(pattern="تاك(?:\s|$)([\s\S]*)")
 async def tagall(event):
   global moment_worker
   if event.is_private:
