@@ -14,12 +14,12 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.1.1"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "ZThon <https://github.com/Zed-Thon/z_ubot>"
+__author__ = "ZThon <https://github.com/Zed-Thon/ZelZal>"
 __copyright__ = f"ZThon Copyright (C) 2021 - 2022  {__author__}"
 
 zedub.version = __version__
 zedub.tgbot.version = __version__
-LOGS = logging.getLogger("زين")
+LOGS = logging.getLogger("زدثــون")
 bot = zedub
 
 
@@ -29,7 +29,7 @@ zedversion = "3.1.1"
 
 def close_connection(*_):
     print("تم اغلاق الاتصال بالسورس")
-    runasync(sbb_b.disconnect())
+    runasync(zedub.disconnect())
     sys.exit(143)
 
 
