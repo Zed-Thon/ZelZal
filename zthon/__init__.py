@@ -14,12 +14,12 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.1.1"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "ZThon <https://github.com/Zed-Thon/ZelZal>"
-__copyright__ = f"ZThon Copyright (C) 2021 - 2022  {__author__}"
+__author__ = "zein <https://github.com/Zed-Thon/ZelZal>"
+__copyright__ = f"Zein Copyright (C) 2021 - 2022  {__author__}"
 
 zedub.version = __version__
 zedub.tgbot.version = __version__
-LOGS = logging.getLogger("زدثــون")
+LOGS = logging.getLogger("زين")
 bot = zedub
 
 
