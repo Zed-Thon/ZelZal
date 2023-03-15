@@ -28,7 +28,7 @@ botusername = Config.TG_BOT_USERNAME
 cmhd = Config.COMMAND_HAND_LER
 
 
-@zedub.bot_cmd(pattern="^/raz$", from_users=Config.OWNER_ID)
+@zedub.bot_cmd(pattern="^/av$", from_users=Config.OWNER_ID)
 async def bot_help(event):
     await event.reply(
         f"""**- اوامـر البـوت المسـاعـد 🤖♥️**:
