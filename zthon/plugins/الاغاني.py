@@ -201,39 +201,3 @@ async def shazamcmd(event):
         await delete_conv(event, chat, purgeflag)
 
 
-@zedub.zed_cmd(
-    pattern="بحث(?:\s|$)([\s\S]*)",
-    command=("اغنيه", plugin_category),
-    info={
-        "header": "لـ تحميـل الاغـانـي مـن يـوتيـوب",
-        "الوصـف": "Searches the song you entered in query and sends it quality of it is 320k",
-        "الاسـتخـدام": "{tr}اغنيه <اسم الاغنيـه>",
-        "مثــال": "{tr}اغنيه محمد السالم وهيلي لوف",
-    },
-)
-async def song2(event):
-    "لـ تحميـل الاغـانـي مـن يـوتيـوب"
-    song = event.pattern_match.group(1)
-    chat = "@CatMusicRobot"
-    reply_id_ = await reply_id(event)
-    zedevent = await edit_or_reply(event, SONG_SEARCH_STRING, parse_mode="html")
-    async with event.client.conversation(chat) as conv:
-        try:
-            purgeflag = await conv.send_message(song)
-        except YouBlockedUserError:
-            await zedub(unblock("CatMusicRobot"))
-            purgeflag = await conv.send_message(song)
-        music = await conv.get_response()
-        await event.client.send_read_acknowledge(conv.chat_id)
-        if not music.media:
-            return await edit_delete(zedevent, SONG_NOT_FOUND, parse_mode="html")
-        await event.client.send_read_acknowledge(conv.chat_id)
-        await event.client.send_file(
-            event.chat_id,
-            music,
-            caption=f"<b>⎉╎البحث :- <code>{song}</code></b>",
-            parse_mode="html",
-            reply_to=reply_id_,
-        )
-        await zedevent.delete()
-        await delete_conv(event, chat, purgeflag)
