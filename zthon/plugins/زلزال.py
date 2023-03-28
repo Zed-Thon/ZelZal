@@ -95,7 +95,7 @@ async def _(event):
         d_link = reply.text
     else:
         return await event.edit("**⎉╎قم بكتـابة رابـط + اسـم التطبيـق اولاً ...**\n**⎉╎او ارسـل .تطبيق بالـرد ع رابـط التطبيـق ...**")
-    if "preview" in d_link or "google" in d_link
+    if "preview" in d_link or "google" in d_link:
         await event.edit("**⎉╎جـارِ تحميـل التطبيق ...**")
     else:
         return
