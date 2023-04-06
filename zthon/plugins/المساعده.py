@@ -22,7 +22,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         await zedub.get_me()
         if query.startswith("مساعده") and event.query.user_id == zedub.uid:
             buttons = [
-                [Button.inline("𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁", data="MMM")],
+                [Button.inline("𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁", data="ZAZ")],
                 [
                     Button.inline("البـوت 🤖", data="botvr"),
                     Button.inline("الحساب🎗", data="acccount"),
@@ -64,7 +64,7 @@ async def help(event):
 @check_owner
 async def _(event):
     butze = [
-        [Button.inline("𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁", data="MMM")],
+        [Button.inline("𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁", data="ZAZ")],
         [
             Button.inline("البـوت 🤖", data="botvr"),
             Button.inline("الحساب🎗", data="acccount"),
