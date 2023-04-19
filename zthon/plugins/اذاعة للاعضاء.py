@@ -115,7 +115,7 @@ async def unmalath(event):
 #                                       تـاريـخ كتابـة الكـود - 19 ابريل/2023                                  #
 #                                        الملف كتابتي من الصفر ومتعوب عليه                                  #
 #                                           تخمط بدون ذكر المصدر = اهينك                                     #
-@zedub.zed_cmd(pattern="حماشه(?: |$)(.*)")
+@zedub.zed_cmd(pattern="زاجل(?: |$)(.*)")
 async def malath(event):
     zedthon = event.pattern_match.group(1)
     if zedthon:
