@@ -3,7 +3,7 @@
 #
 # This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/Zed-Thon/ZelZal/blob/main/LICENSE/>.
+# <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
 
 """ الوصـف : اوامـر حمـاية المجمـوعـات بالمسـح والطـرد والتقييـد
 حقـوق : @ZedThon
