@@ -3,7 +3,7 @@
 #
 # This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/Zed-Thon/ZelZal/blob/main/LICENSE/>.
+# <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
 """ 
 Logo & Style for ZThon™ t.me/ZedThon
 Write file by Zelzal t.me/zzzzl1l
