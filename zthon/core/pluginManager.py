@@ -17,8 +17,8 @@ github_patern = re.compile(r"(?:https?)?(?:www.)?(?:github.com/)?([\w\-.]+/[\w\-
 github_raw_pattern = re.compile(
     r"(?:https?)?(?:raw.)?(?:githubusercontent.com/)?([\w\-.]+/[\w\-.]+)/?"
 )
-trees_pattern = "https://api.github.com/repos/{}/git/trees/main"
-raw_pattern = "https://raw.githubusercontent.com/{}/main/{}"
+trees_pattern = "https://api.github.com/repos/{}/git/trees/master"
+raw_pattern = "https://raw.githubusercontent.com/{}/master/{}"
 
 LOGS = logging.getLogger(__name__)
 
