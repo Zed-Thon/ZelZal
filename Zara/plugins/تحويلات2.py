@@ -390,7 +390,7 @@ async def _(event):  # sourcery no-metrics
             os.remove(files)
 
 
-@zedub.zed_cmd(pattern="لمتحركه(?: |$)((-)?(r|l|u|d|s|i)?)$")
+@zedub.zed_cmd(pattern="ممتحركة(?: |$)((-)?(r|l|u|d|s|i)?)$")
 async def pic_gifcmd(event):
     reply = await event.get_reply_message()
     mediatype = media_type(reply)
