@@ -62,8 +62,12 @@ async def startup_process():
     await startupmessage()
     return
 
-zedub.loop.run_until_complete(startup_process())
+async def externalrepo():
+    if Config.VCMODE:
+        await install_externalrepo("https://github.com/Zed-Thon/ZVCPlayer", "zvcplayer", "ZedVC")
 
+zedub.loop.run_until_complete(externalrepo())
+zedub.loop.run_until_complete(startup_process())
 
 if len(sys.argv) in {1, 3, 4}:
     with contextlib.suppress(ConnectionError):
