@@ -19,7 +19,7 @@ from telethon import Button, functions, types, utils
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.errors.rpcerrorlist import FloodWaitError
 
-from . import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
+from Zara import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
 
 from ..Config import Config
 from aiohttp import web
