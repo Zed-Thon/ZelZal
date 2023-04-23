@@ -153,7 +153,7 @@ async def on_file_to_photo(event):
     await catt.delete()
 
 
-@zedub.zed_cmd(pattern="لمتحرك(?: |$)(.*)")
+@zedub.zed_cmd(pattern="متحركة(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
