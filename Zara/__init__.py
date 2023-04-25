@@ -35,7 +35,10 @@ def close_connection(*_):
 
 signal.signal(signal.SIGTERM, close_connection)
 
-UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
+if Config.UPSTREAM_REPO == "zel":
+    UPSTREAM_REPO_URL = "https://github.com/Zed-Thon/Zelzal"
+else:
+    UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
 if Config.PRIVATE_GROUP_BOT_API_ID == 0:
     if gvarstatus("PRIVATE_GROUP_BOT_API_ID") is None:
@@ -58,7 +61,7 @@ if Config.PM_LOGGER_GROUP_ID == 0:
     else:
         Config.PM_LOGGER_GROUP_ID = int(gvarstatus("PM_LOGGER_GROUP_ID"))
 elif str(Config.PM_LOGGER_GROUP_ID)[0] != "-":
-    Config.PM_LOGGER_GROUP_ID = int(f"-{str(Config.PM_LOGGER_GROUP_ID)}")
+    Config.PM_LOGGER_GROUP_ID = int(f"-" + str (Config.PM_LOGGER_GROUP_ID))
 
 try:
     if Config.HEROKU_API_KEY is not None or Config.HEROKU_APP_NAME is not None:
