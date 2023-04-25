@@ -22,18 +22,8 @@ zedub.tgbot.version = __version__
 LOGS = logging.getLogger("زدثــون")
 bot = zedub
 
-
 StartTime = time.time()
 zedversion = "3.1.1"
-
-
-def close_connection(*_):
-    print("تم اغلاق الاتصال بالسورس")
-    runasync(zedub.disconnect())
-    sys.exit(143)
-
-
-signal.signal(signal.SIGTERM, close_connection)
 
 if Config.UPSTREAM_REPO == "zel":
     UPSTREAM_REPO_URL = "https://github.com/Zed-Thon/Zelzal"
