@@ -99,7 +99,7 @@ async def post_to_telegraph(
     page_title,
     html_format_content,
     auth_name="Zed-Thon",
-    auth_url="https://t.me/ZedThon",
+    auth_url="https://t.me/ZThon",
 ):
     post_client = TelegraphPoster(use_api=True)
     post_client.create_api_token(auth_name)
