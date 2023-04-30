@@ -1,6 +1,6 @@
 # ZedThon - Zara
 # Copyright (C) 2022 ZedThon . All Rights Reserved
-#< https://t.me/ZedThon >
+#< https://t.me/ZThon >
 # This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
@@ -86,7 +86,7 @@ async def startupmessage():
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/f821d27af168206b472ad.mp4",
                 caption="**•⎆┊تـم بـدء تشغـيل سـورس زدثــون الخاص بك .. بنجاح 🧸♥️**",
-                buttons=[(Button.url("𝙕𝙀𝘿𝙏𝙝𝙤𝙣𓅛", "https://t.me/ZedThon"),)],
+                buttons=[(Button.url("𝙕𝙏𝙝𝙤𝙣𓅛", "https://t.me/ZThon"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -158,7 +158,7 @@ async def mybot():
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @ZedThon 🌐")
+            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @ZThon 🌐")
         except Exception as e:
             print(e)
 
@@ -188,7 +188,7 @@ async def add_bot_to_logger_group(chat_id):
             LOGS.error(str(e))
 
 
-Zara = {"@ZedThon", "@Zed_Thon", "@zzzvrr", "@zzzlvv"}
+Zara = {"@ZThon", "@Zed_Thon", "@zzzvrr", "@zzzlvv"}
 async def saves():
    for Cat in Zara:
         try:
