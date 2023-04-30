@@ -154,6 +154,6 @@ async def malath(event):
                 pass
             except Exception as e:
                 zzz.edit(f"خطأ في إرسال الرسالة إلى {user_entity.id}: {str(e)}")
-    ZELZAL_BEST_DEV = f"[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/ZedThon) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**⎉╎تمت الاذاعـه .. بنجـاح  ✅**\n**⎉╎عـدد {success} أشخـاص**"
+    ZELZAL_BEST_DEV = f"[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/ZThon) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**⎉╎تمت الاذاعـه .. بنجـاح  ✅**\n**⎉╎عـدد {success} أشخـاص**"
     await zzz.edit(ZELZAL_BEST_DEV, link_preview=False)
 
