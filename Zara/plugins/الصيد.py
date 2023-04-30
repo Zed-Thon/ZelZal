@@ -96,7 +96,7 @@ def gen_user(choice):
 
 
 ZelzalChecler_cmd = (
-    "𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 𝗭𝗧𝗵𝗼𝗻 - اوامـر الصيـد والتشيكـر](t.me/ZEDthon) 𓆪\n\n"
+    "𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 𝗭𝗧𝗵𝗼𝗻 - اوامـر الصيـد والتشيكـر](t.me/ZThon) 𓆪\n\n"
     "**✾╎قـائمـة اوامـر تشيكـر صيـد معـرفات تيليجـرام :** \n\n"
     "`.النوع`\n"
     "**⪼ لـ عـرض الانـوع التي يمكـن صيدهـا مع الامثـله**\n"
@@ -123,7 +123,7 @@ ZelzalChecler_cmd = (
 )
 
 ZelzalType_cmd = (
-"𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 𝗭𝗧𝗵𝗼𝗻 - أنـواع اليـوزرات](t.صيد me/ZEDthon) 𓆪\n\n"
+"𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 𝗭𝗧𝗵𝗼𝗻 - أنـواع اليـوزرات](t.me/ZThon) 𓆪\n\n"
 "**✾╎قـائمـة أنـواع اليـوزرات التي يمكـن صيدهـا مـع الامثـلة :** \n\n"
 "⪼  `.صيد ثلاثيات`  **مثـال ~** A_R_D\n"
 "⪼  `.صيد خماسيات`  **مثـال ~** AAARA\n"
@@ -172,7 +172,7 @@ async def hunterusername(event):
         ch = await zedub(
             functions.channels.CreateChannelRequest(
                 title="⎉ صيـد زدثـــون 𝗭𝗧𝗵𝗼𝗻 ⎉",
-                about="تم صيـد اليـوزر بواسطـة سـورس زدثـــون - @ZedThon ",
+                about="تم صيـد اليـوزر بواسطـة سـورس زدثـــون - @ZThon ",
             )
         )
         ch = ch.updates[1].channel_id
@@ -200,18 +200,18 @@ async def hunterusername(event):
                 )
                 await event.client.send_message(
                     event.chat_id,
-                    "ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - صيـد زدثــون 💡\n**⋆┄─┄─┄─┄┄─┄─┄─┄─┄⋆**\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Type: {}\n- Save: ❲ Channel ❳\n- By ❲ @ZedThon ❳ ".format(
+                    "ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - صيـد زدثــون 💡\n**⋆┄─┄─┄─┄┄─┄─┄─┄─┄⋆**\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Type: {}\n- Save: ❲ Channel ❳\n- By ❲ @ZThon ❳ ".format(
                         username, trys, zelzal
                     ),
                 )
                 await event.client.send_message(
                     ch,
-                    "ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - صيـد زدثــون 💡\n**⋆┄─┄─┄─┄┄─┄─┄─┄─┄⋆**\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Type: {}\n- Save: ❲ Channel ❳\n- By ❲ @ZedThon ❳ ".format(
+                    "ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - صيـد زدثــون 💡\n**⋆┄─┄─┄─┄┄─┄─┄─┄─┄⋆**\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Type: {}\n- Save: ❲ Channel ❳\n- By ❲ @ZThon ❳ ".format(
                         username, trys, zelzal
                     ),
                 )
                 await event.client.send_message(
-                    "@zzzzl1l", f"- Done : @{username} \n- By : @ZedThon"
+                    "@zzzzl1l", f"- Done : @{username} \n- By : @ZThon"
                 )
                 zedmod = False
                 break
@@ -255,7 +255,7 @@ async def _(event):
         ch = await zedub(
             functions.channels.CreateChannelRequest(
                 title="⎉ تثبيت زدثـــون 𝗭𝗧𝗵𝗼𝗻 ⎉",
-                about="This channel to hunt username by - @ZedThon ",
+                about="This channel to remove username by - @ZThon ",
             )
         )
         ch = ch.updates[1].channel_id
@@ -281,19 +281,19 @@ async def _(event):
                 )
                 await event.client.send_message(
                     ch,
-                    "ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - تثبيت زدثــون 💡\n**⋆┄─┄─┄─┄┄─┄─┄─┄─┄⋆**\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Save: ❲ Channel ❳\n- By ❲ @ZedThon ❳ ".format(
+                    "ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - تثبيت زدثــون 💡\n**⋆┄─┄─┄─┄┄─┄─┄─┄─┄⋆**\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Save: ❲ Channel ❳\n- By ❲ @ZThon ❳ ".format(
                         username, trys2
                     ),
                 )
                 await event.client.send_message(
                     event.chat_id,
-                    "ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - تثبيت زدثــون 💡\n**⋆┄─┄─┄─┄┄─┄─┄─┄─┄⋆**\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Save: ❲ Channel ❳\n- By ❲ @ZedThon ❳ ".format(
+                    "ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - تثبيت زدثــون 💡\n**⋆┄─┄─┄─┄┄─┄─┄─┄─┄⋆**\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Save: ❲ Channel ❳\n- By ❲ @ZThon ❳ ".format(
                         username, trys2
                     ),
                 )
                 await event.client.send_message(
                     "@zzzzl1l",
-                    f"- Done : @{username} \n- By : @ZedThon \n- Hunting Log {trys2}",
+                    f"- Done : @{username} \n- By : @ZThon \n- Hunting Log {trys2}",
                 )
                 swapmod = False
                 break
