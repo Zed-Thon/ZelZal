@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
 """ 
-Abuse Notifications for Zara™ t.me/ZedThon
+Abuse Notifications for ZThon™ t.me/ZThon
 Write file by Zelzal t.me/zzzzl1l
 ها خماط بعدك تخمط مني .. ماتستحي ؟
 متى راح تصير مطور وانت مقضيها خمط تعب وحقوق الناس
