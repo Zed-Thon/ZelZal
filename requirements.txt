@@ -55,6 +55,7 @@ pySmartDL
 pytube
 python-barcode
 pyTelegramBotAPI==3.7.7
+py-tgcalls==0.9.1
 pytz
 qrcode
 randomstuff.py
