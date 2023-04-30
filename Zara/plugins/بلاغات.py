@@ -1,5 +1,5 @@
 # Zed-Thon - ZelZal
-# Copyright (C) 2023 Zedthon . All Rights Reserved
+# Copyright (C) 2023 ZThon . All Rights Reserved
 #
 # This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
 # PLease read the GNU Affero General Public License in
