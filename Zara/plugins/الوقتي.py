@@ -1,6 +1,6 @@
 # @Zed-Thon - ZelZal
-# Copyright (C) 2022 ZedThon . All Rights Reserved
-#< https://t.me/ZedThon >
+# Copyright (C) 2022 ZThon . All Rights Reserved
+#< https://t.me/ZThon >
 # This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
@@ -117,7 +117,7 @@ async def autobio_loop():
               namefont = namerzfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
         DEFAULTUSERBIO = gvarstatus("DEFAULT_BIO") or "‏{وَتَوَكَّلْ عَلَى اللَّهِ ۚ وَكَفَىٰ بِاللَّهِ وَكِيلًا}" #Code by T.me/zzzzl1l
-        bio = f"{DEFAULTUSERBIO} 𓏺 {HM}" 
+        bio = f"{DEFAULTUSERBIO} ⏐ {HM}" 
         LOGS.info(bio)
         try:
             await zedub(functions.account.UpdateProfileRequest(about=bio))
