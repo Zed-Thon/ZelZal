@@ -111,7 +111,7 @@ async def lg1(userevent):
     await bot.send_file(
         userevent.chat_id,
         file_name,
-        caption=f"**- تم صنـع لـوجـو انكـلش .. بنجـاح 🎆☑️\n- حقـوق :** {my_mention} .\n\n**- بواسطـة : @ZedThon**",
+        caption=f"**- تم صنـع لـوجـو انكـلش .. بنجـاح 🎆☑️\n- حقـوق :** {my_mention} .\n\n**- بواسطـة : @ZThon**",
     )
     await event.delete()
     try:
@@ -186,7 +186,7 @@ async def lg1(userevent):
     await bot.send_file(
         userevent.chat_id,
         file_name,
-        caption=f"**- تم صنـع لـوجـو عـربـي .. بنجـاح 🎆☑️\n- حقـوق :** {my_mention} .\n\n**- بواسطـة : @ZedThon**",
+        caption=f"**- تم صنـع لـوجـو عـربـي .. بنجـاح 🎆☑️\n- حقـوق :** {my_mention} .\n\n**- بواسطـة : @ZThon**",
     )
     await event.delete()
     try:
