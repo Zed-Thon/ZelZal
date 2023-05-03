@@ -39,7 +39,7 @@ async def _(event):  # sourcery no-metrics
     if not user:
         return
     uid = user.id
-    chat = "@SangMata_BOT"
+    chat = "@SangMata_beta_bot"
     zedevent = await edit_or_reply(event, "**⎉╎جـارِ الكشـف ...**")
     async with event.client.conversation(chat) as conv:
         try:
@@ -99,7 +99,7 @@ async def _(event):  # sourcery no-metrics
     if not user:
         return
     uid = user.id
-    chat = "@SangMata_BOT"
+    chat = "@SangMata_beta_bot"
     zedevent = await edit_or_reply(event, "**⎉╎جـارِ الكشـف ...**")
     async with event.client.conversation(chat) as conv:
         try:
