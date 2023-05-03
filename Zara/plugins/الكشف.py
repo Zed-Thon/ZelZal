@@ -1,6 +1,7 @@
 import asyncio
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
+from telethon.tl.functions.contacts import UnblockRequest as unblock
 
 from . import zedub
 
@@ -39,13 +40,14 @@ async def _(event):  # sourcery no-metrics
     if not user:
         return
     uid = user.id
-    chat = "@SangMata_BOT"
+    chat = "@SangMata_beta_bot"
     zedevent = await edit_or_reply(event, "**⎉╎جـارِ الكشـف ...**")
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message(f"{uid}")
         except YouBlockedUserError:
-            await edit_delete(zedevent, "**- اضغط ستارت هنـا @SangMata_BOT ثم اعد ارسال الامر**")
+            await zedub(unblock("SangMata_beta_bot"))
+            await conv.send_message(f"{uid}")
         responses = []
         while True:
             try:
@@ -56,7 +58,7 @@ async def _(event):  # sourcery no-metrics
         await event.client.send_read_acknowledge(conv.chat_id)
     if not responses:
         await edit_delete(zedevent, "**- الامـر في وضع الصيانه حاليـاً ...**")
-    if "No data available" in responses:
+    awaitif "No data available" in responses:
         await edit_delete(zedevent, "**⎉╎المستخدم ليس لديه أي سجل اسمـاء بعـد ...**")
     names, usernames = await sanga_seperator(responses)
     cmd = event.pattern_match.group(1)
@@ -99,13 +101,14 @@ async def _(event):  # sourcery no-metrics
     if not user:
         return
     uid = user.id
-    chat = "@SangMata_BOT"
+    chat = "@SangMata_beta_bot"
     zedevent = await edit_or_reply(event, "**⎉╎جـارِ الكشـف ...**")
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message(f"{uid}")
         except YouBlockedUserError:
-            await edit_delete(zedevent, "**- اضغط ستارت هنـا @SangMata_BOT ثم اعد ارسال الامر**")
+            await zedub(unblock("SangMata_beta_bot"))
+            await conv.send_message(f"{uid}")
         responses = []
         while True:
             try:
