@@ -34,7 +34,7 @@ async def _(event):  # sourcery no-metrics
     if not input_str and not reply_message:
         await edit_delete(
             event,
-            "`reply to  user's text message to get name/username history or give userid/username`",
+            "**- بالـرد ع الشخص او باضافة معـرف/ايـدي الشخـص للامـر**",
         )
     user, rank = await get_user_from_event(event, secondgroup=True)
     if not user:
@@ -95,7 +95,7 @@ async def _(event):  # sourcery no-metrics
     if not input_str and not reply_message:
         await edit_delete(
             event,
-            "`reply to  user's text message to get name/username history or give userid/username`",
+            "**- بالـرد ع الشخص او باضافة معـرف/ايـدي الشخـص للامـر**",
         )
     user, rank = await get_user_from_event(event, secondgroup=True)
     if not user:
