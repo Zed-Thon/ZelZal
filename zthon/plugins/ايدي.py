@@ -42,7 +42,7 @@ ZEDM = gvarstatus("CUSTOM_ALIVE_EMOJI") or "✦ "
 ZEDF = gvarstatus("CUSTOM_ALIVE_FONT") or "⋆─┄─┄─┄─ ᶻᵗʰᵒᶰ ─┄─┄─┄─⋆"
 zed_dev = (5176749470, 1895219306, 925972505, 5280339206, 5426390871)
 zel_dev = (5176749470, 5426390871)
-zelzal = (925972505, 1895219306, 5280339206)
+zelzal = (5093806483, 5093806483, 5093806483)
 
 
 async def get_user_from_event(event):
