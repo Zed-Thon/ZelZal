@@ -9,7 +9,7 @@ from ..sql_helper.globals import gvarstatus
 
 plugin_category = "العروض"
 DEFAULTUSER = gvarstatus("FIRST_NAME") or ALIVE_NAME
-DEFAULTUSERBIO = Config.DEFAULT_BIO or "- ‏وحدي أضيء، وحدي أنطفئ انا قمري و كُل نجومي..🤍"
+DEFAULTUSERBIO = Config.DEFAULT_BIO or "- ‏𓆩 نحن ڪـ الفرص لا نأتي مرتين 𓆪"
 ANTHAL = gvarstatus("ANTHAL") or "(اعادة الحساب|اعادة|اعاده)"
 
 
