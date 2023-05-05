@@ -81,9 +81,9 @@ async def startupmessage():
         if BOTLOG:
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/f821d27af168206b472ad.mp4",
+                "https://graph.org/file/6c75e8924c24d881a34aa.jpg",
                 caption="**•⎆┊تـم بـدء تشغـيل سـورس زدثــون الخاص بك .. بنجاح 🧸♥️**",
-                buttons=[(Button.url("𝙕𝙀𝘿𝙏𝙝𝙤𝙣𓅛", "https://t.me/ZedThon"),)],
+                buttons=[(Button.url("𝙕𝙀𝘿𝙏𝙝𝙤𝙣𓅛", "https://t.me/ALAPATH"),)],
             )
     except Exception as e:
         LOGS.error(e)
