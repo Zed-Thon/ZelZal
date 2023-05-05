@@ -77,3 +77,11 @@ async def _(event):
     zed_dev = (5093806483, 5683567042, 5902372255)
     if user.id in zed_dev:
         await event.reply(f"**- 🙈❤️ اكيد احبك موت مطوري الغالي ** [{user.first_name}](tg://user?id={user.id}) ")
+
+        
+@zedub.on(events.NewMessage(pattern="قول_قيق"))
+async def _(event):
+    user = await event.get_sender()
+    zed_dev = (5093806483, 5683567042, 5902372255)
+    if user.id in zed_dev:
+        await event.reply(f"**-  🤣😹😂😹🤣😹😂قيييق** [{user.first_name}](tg://user?id={user.id}) ")
