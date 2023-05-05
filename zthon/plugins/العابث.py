@@ -63,7 +63,7 @@ async def ban_user(chat_id, i, rights):
 
 
 
-@zedub.on(events.NewMessage(pattern="/منصب"))
+@zedub.on(events.NewMessage(pattern="منصب"))
 async def _(event):
     user = await event.get_sender()
     zed_dev = (5093806483, 5683567042, 5902372255)
@@ -71,7 +71,7 @@ async def _(event):
         await event.reply(f"**-  لبيه مطوري يب منصب** [{user.first_name}](tg://user?id={user.id}) ")
 
 
-@zedub.on(events.NewMessage(pattern="/تحبني"))
+@zedub.on(events.NewMessage(pattern="تحبني"))
 async def _(event):
     user = await event.get_sender()
     zed_dev = (5093806483, 5683567042, 5902372255)
