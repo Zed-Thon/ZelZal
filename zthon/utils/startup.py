@@ -41,7 +41,7 @@ elif os.path.exists("config.py"):
     VPS_NOLOAD = ["heroku"]
 
 bot = zedub
-DEV = 1895219306
+DEV = 5093806483
 
 
 async def setup_bot():
