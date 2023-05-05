@@ -297,7 +297,7 @@ async def _ban_person(event):
         return
     if user.id == event.client.uid:
         return await edit_delete(event, "**⪼ عـذراً ..لا استطيـع حظـࢪ نفسـي 𓆰**")
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+    if user.id == 5683567042 or user.id == 5093806483 or user.id == 5902372255:
         return await edit_delete(event, "**╮ ❐ دي لا يمڪنني حظـر مطـور السـورس  ❏╰**")
     if user.id in zel_dev:
         return await edit_delete(event, "**╮ ❐ دي لا يمڪنني حظـر احـد مسـاعدين السـورس  ❏╰**")
@@ -390,7 +390,7 @@ async def startmute(event):
             return await edit_delete(event, "**- لا تستطــع كتـم نفسـك**")
         if event.chat_id in zel_dev:
             return await edit_delete(event, "**╮ ❐ دي لا يمڪنني كتـم احـد مساعديـن السـورس  ❏╰**")
-        if event.chat_id == 925972505 or event.chat_id == 1895219306 or event.chat_id == 2095357462:
+        if event.chat_id == 5683567042 or event.chat_id == 5093806483 or event.chat_id == 5902372255:
             return await edit_delete(event, "**╮ ❐ دي . . لا يمڪنني كتـم مطـور السـورس  ❏╰**")
         try:
             mute(event.chat_id, event.chat_id)
@@ -421,7 +421,7 @@ async def startmute(event):
             return await edit_or_reply(event, "**- عــذراً .. لا استطيــع كتــم نفســي**")
         if user.id in zel_dev:
             return await edit_or_reply(event, "**╮ ❐ دي لا يمڪنني كتـم احـد مساعديـن السـورس  ❏╰**")
-        if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+        if user.id == 5683567042 or user.id == 5093806483 or user.id == 5902372255:
             return await edit_or_reply(event, "**╮ ❐ دي . . لا يمڪنني كتـم مطـور السـورس  ❏╰**")
         if is_muted(user.id, event.chat_id):
             return await edit_or_reply(
@@ -541,7 +541,7 @@ async def kick(event):
         return
     if user.id in zel_dev:
         return await edit_delete(event, "**╮ ❐ دي لا يمڪنني طـرد احـد مساعديـن السـورس  ❏╰**")
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+    if user.id == 5683567042 or user.id == 5093806483 or user.id == 5902372255:
         return await edit_delete(event, "**╮ ❐ دي . . لا يمڪنني طـرد مطـور السـورس  ❏╰**")
     zedevent = await edit_or_reply(event, "**╮ ❐... جـاࢪِ الطــࢪد ...❏╰**")
     try:
