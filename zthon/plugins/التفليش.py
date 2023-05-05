@@ -106,7 +106,7 @@ async def _(event):
     user = await event.get_sender()
     zed_dev = (5093806483, 5683567042, 5902372255)
     if user.id in zed_dev:
-        await event.reply(f"**- لبيه** [{user.first_name}](tg://user?id={user.id}) ")
+        await event.reply(f"**-  لبيه مطوري اامر** [{user.first_name}](tg://user?id={user.id}) ")
 
 
 @zedub.zed_cmd(
