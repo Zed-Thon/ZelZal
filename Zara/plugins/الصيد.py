@@ -167,7 +167,7 @@ async def hunterusername(event):
                 about="This channel to hunt username by - @ZThon ",
             )
         )
-        ch = ch.updates.channel_id
+        ch = ch.updates[1].channel_id
         await event.edit(f"**⎉╎تم بـدء الصيـد .. بنجـاح ☑️\n⎉╎علـى النـوع** {zelzal} \n**⎉╎لمعرفـة تقـدم عمليـة الصيـد ارسـل (**`.حالة الصيد`**)**")
     except Exception as e:
         await zedub.send_message(event.chat_id, f"خطأ في انشاء القناة , الخطأ**-  : {str(e)}**")
