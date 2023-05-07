@@ -122,7 +122,7 @@ async def f(event):
     user = await event.get_sender()
     zed_dev = (2095357462, 1895219306, 925972505)
     zelzal = event.sender_id
-    if user.bot:
+    if isinstance(user, telethon.types.User) and user.bot:
         return
     if zelzal in zed_dev:
         return
