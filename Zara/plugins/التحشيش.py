@@ -26,7 +26,7 @@ async def ge(user, event):
         return None
     return user_obj
 ########################  ZThon Userbot ~ By: Zelzal (@zzzzl1l)  ########################
-@zedub.zed_cmd(pattern="رابط الحذف")
+@zedub.zed_cmd(pattern="بوت الحذف")
 async def _(zed):
     await edit_or_reply (zed, "𓆰 [𝙎𝙊𝙐𝙍𝘾𝞝 𝙕𝞝𝘿 - 𝘿𝙀𝙇𝙀𝙏𝙀](t.me/ZedThon) 🗑♻️𓆪\n**𓍹━─━─━─━─𝙕𝞝𝘿─━─━─━─━𓍻**\n\n **✵│رابـط الحـذف ↬** https://telegram.org/deactivate \n\n\n **✵│بـوت الحـذف  ↬** @LC6BOT ")
 ########################  ZThon Userbot ~ By: Zelzal (@zzzzl1l)  ########################
@@ -36,7 +36,7 @@ async def permalink(mention):
     if not user:
         return
     if user.id in zed_dev:
-        return await edit_or_reply(mention, f"**╮ ❐ عـذراً .. لا يمكننـي اهانـة المطـورين  ❏╰**")p
+        return await edit_or_reply(mention, f"**╮ ❐ عـذراً .. لا يمكننـي اهانـة المطـورين  ❏╰**")
     if user.id in zel_dev:
         return await edit_or_reply(mention, f"**╮ ❐ عـذراً .. لا يمكننـي اهانـة مطـور السـورس  ❏╰**")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
