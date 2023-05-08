@@ -352,8 +352,8 @@ async def _(event): # Code Update by @zzzzl1l
         else:
             pass
         drys2[0] += 1
-    isklaim.clear()
-    isklaim.append("off")
+    isclaim.clear()
+    isclaim.append("off")
     await zedub.send_message(event.chat_id, "**- تم الانتهاء من التثبيت .. بنجـاح ✅**")
 
 @zedub.zed_cmd(pattern="حالة الصيد")
