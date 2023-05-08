@@ -5,8 +5,8 @@ import random
 
 from telethon import events
 
-from zthon import zedub
-from zthon.core.logger import logging
+from Zara import zedub
+from Zara.core.logger import logging
 from ..Config import Config
 from ..core.managers import edit_or_reply, edit_delete
 from ..helpers import reply_id, get_user_from_event
