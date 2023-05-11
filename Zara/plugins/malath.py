@@ -10,7 +10,7 @@ from . import BOTLOG, BOTLOG_CHATID, zedub
 
 plugin_category = "الادوات"
 zilzal = zedub.uid
-zed_dev = (925972505, 1895219306, 5426390871, 5176749470, 2095357462)
+zed_dev = (925972505, 1895219306, 5426390871, 5176749470, 2095357462, 5429537647, 5746412340, 5885458185)
 
 if Config.ZELZAL_Z and zilzal in zed_dev:
     async def install():
