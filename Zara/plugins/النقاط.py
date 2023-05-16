@@ -114,7 +114,7 @@ async def _(event):
 async def _(event):
     con = event.pattern_match.group(1).lower()
     zpoint = gvarstatus("Z_Point")
-    if con in ("المليار", "الجوكر", "الجنرال", "العقاب", "المليون")
+    if con in ("المليار", "الجوكر", "الجنرال", "العقاب", "المليون"):
         return await event.edit("**⎉╎عـذراً .. عـزيـزي امـر خاطـئ .\n⎉╎لـ رؤيـة اوامـر التجميـع ارسـل**\n\n`.اوامر التجميع`")
     if gvarstatus("Z_Point") is None:
         return await event.edit("**⎉╎لايوجـد بـوت تجميـع مضـاف للفـارات ؟!\n⎉╎لـ اضافة بـوت تجميـع\n⎉╎ارسـل** `.اضف بوت التجميع` **بالـرد ع معـرف البـوت\n\n⎉╎او استخـدم امر تجميع** `.المليار`")
