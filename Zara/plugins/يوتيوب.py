@@ -696,7 +696,7 @@ async def zelzal_gif(event):
         return await edit_delete(
             event, "**- احتـاج الـى رابــط من الانستـا .. للتحميــل ؟!**", 10
         )
-    chat = "@ziyotech_instagram_downloaderbot" #Code by T.me/zzzzl1l
+    chat = "@FullSavebot" #Code by T.me/zzzzl1l
     zed = await edit_or_reply(event, "**⎉╎جـارِ التحميل من الانستـا .. انتظر قليلا ▬▭**")
     async with borg.conversation(chat) as conv: #Code by T.me/zzzzl1l
         try:
@@ -704,7 +704,7 @@ async def zelzal_gif(event):
             await conv.get_response()
             await conv.send_message(link) #Code by T.me/zzzzl1l
             await conv.get_response()
-            await asyncio.sleep(3)
+            await asyncio.sleep(2)
             zedthon = await conv.get_response()
             await zed.delete()
             await borg.send_file(
@@ -714,12 +714,12 @@ async def zelzal_gif(event):
                 parse_mode="html",
             )
         except YouBlockedUserError: #Code by T.me/zzzzl1l
-            await zedub(unblock("ziyotech_instagram_downloaderbot"))
+            await zedub(unblock("FullSavebot"))
             await conv.send_message("/start")
             await conv.get_response()
             await conv.send_message(link)
             await conv.get_response()
-            await asyncio.sleep(3)
+            await asyncio.sleep(2)
             zedthon = await conv.get_response()
             await zed.delete()
             await borg.send_file(
