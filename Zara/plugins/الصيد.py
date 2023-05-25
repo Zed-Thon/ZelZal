@@ -163,7 +163,7 @@ async def cmd(zelzallll):
 async def hunterusername(event):
     choice = str(event.pattern_match.group(1))
     replly = await event.get_reply_message()
-    if not reply and choice and choice not in ("ثلاثيات", "خماسيات", "خماسي حرفين", "سداسيات", "سداسي حرفين", "سباعي", "بوتات"): #code by t.me/zzzzl1l
+    if choice not in ("ثلاثيات", "خماسيات", "خماسي حرفين", "سداسيات", "سداسي حرفين", "سباعي", "بوتات"): #code by t.me/zzzzl1l
         return await event.edit(f"**- عـذراً عـزيـزي\n- لايوجـد نوع** {choice} \n**- لـ عرض الانواع ارسـل (**`.النوع`**)**")
 
     try:
