@@ -4,7 +4,6 @@ setuptools
 wheel
 aiofiles
 aiohttp
-akinator.py
 apscheduler
 cairosvg
 cinemagoer
@@ -46,6 +45,7 @@ Pillow
 prettytable
 psutil
 psycopg2
+py-tgcalls==0.9.1
 pyfiglet
 PyGithub
 pygments
