@@ -1234,7 +1234,7 @@ async def variable(event):
 
 
 # Copyright (C) 2022 Zed-Thon . All Rights Reserved
-@zedub.zed_cmd(pattern="اضف صورة (الحماية|الحمايه|الفحص|الوقتي|البوت|الاوامر) ?(.*)")
+@zedub.zed_cmd(pattern="اضف صورة (الحماية|الحمايه|الفحص|الوقتي|البوت|الكتم) ?(.*)")
 async def _(malatha):
     if malatha.fwd_from:
         return
