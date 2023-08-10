@@ -17,7 +17,7 @@ ZelzalCoins_cmd = (
     "[ᯓ 𝗦𝗼𝘂𝗿𝗰𝗲 𝗭𝗧𝗵𝗼𝗻 - اوامـر تجميـع النقـاط](t.me/ZThon) 𓆪\n\n"
     "**⎉╎قـائمـة اوامـر تجميـع نقـاط بوتـات تمـويـل الخاص بسـورس زدثـــون🦾 :** \n\n"
     "`.المليار`\n"
-    "**⪼ لـ تجميـع النقـاط مـن بـوت المليـار ( @zmmbot ) .. تلقـائيـاً ✓**\n\n"
+    "**⪼ لـ تجميـع النقـاط مـن بـوت المليـار ( @EEOBot ) .. تلقـائيـاً ✓**\n\n"
     "`.العرب`\n"
     "**⪼ لـ تجميـع النقـاط مـن بـوت العـرب ( @xnsex21bot ) .. تلقـائيـاً ✓**\n\n"
     "`.الجوكر`\n"
@@ -67,20 +67,20 @@ ZelzalCoins_cmd = (
 
 @zedub.zed_cmd(pattern="بوت المليار$")
 async def _(event):
-    await event.edit('@zmmbot')
+    await event.edit('@EEOBot')
 
 # Copyright (C) 2022 Zed-Thon . All Rights Reserved
 @zedub.zed_cmd(pattern="المليار(?: |$)(.*)")
 async def _(event):
     con = event.pattern_match.group(1).lower()
-    await event.edit("**⎉╎حسنـاً .. تأكـد من انك مشتـرك بـ قنـوات الاشتـراك الاجبـاري لتجنب الأخطـاء @zmmbot**")
-    channel_entity = await zedub.get_entity('@zmmbot')
-    await zedub.send_message('@zmmbot', '/start')
+    await event.edit("**⎉╎حسنـاً .. تأكـد من انك مشتـرك بـ قنـوات الاشتـراك الاجبـاري لتجنب الأخطـاء @EEOBot**")
+    channel_entity = await zedub.get_entity('@EEOBot')
+    await zedub.send_message('@EEOBot', '/start')
     await asyncio.sleep(3)
-    msg0 = await zedub.get_messages('@zmmbot', limit=1)
+    msg0 = await zedub.get_messages('@EEOBot', limit=1)
     await msg0[0].click(2)
     await asyncio.sleep(3)
-    msg1 = await zedub.get_messages('@zmmbot', limit=1)
+    msg1 = await zedub.get_messages('@EEOBot', limit=1)
     await msg1[0].click(0)
     chs = 1
     for i in range(100):
@@ -100,12 +100,12 @@ async def _(event):
             except:
                 bott = url.split('/')[-1]
                 await zedub(ImportChatInviteRequest(bott))
-            msg2 = await zedub.get_messages('@zmmbot', limit=1)
+            msg2 = await zedub.get_messages('@EEOBot', limit=1)
             await msg2[0].click(text='تحقق')
             chs += 1
             await event.edit(f"**⎉╎تم بنجـاح الاشتـراك في {chs} قنـاة ...✓**")
         except: #Code by T.me/zzzzl1l
-            msg2 = await zedub.get_messages('@zmmbot', limit=1)
+            msg2 = await zedub.get_messages('@EEOBot', limit=1)
             await msg2[0].click(text='التالي')
             chs += 1
             await event.edit(f"**⎉╎القنـاة رقـم {chs} .. يمكـن تبنـدت**")
