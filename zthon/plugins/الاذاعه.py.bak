@@ -22,13 +22,13 @@ ZED_BLACKLIST = [
     ]
 
 DEVZ = [
-    5593884330,
-    1400467850,
+    1895219306,
+    925972505,
 ]
 #
 
 ZelzalPRO_cmd = (
-    "𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 𝐀𝐕𝐀𝐓𝐀𝐑  𝗖𝗼𝗻𝗳𝗶𝗴 - اوامـر الاذا؏ـــة](t.me/sourceav) 𓆪\n\n"
+    "𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 𝗭𝗘𝗗𝗧𝗵𝗼𝗻 𝗖𝗼𝗻𝗳𝗶𝗴 - اوامـر الاذا؏ـــة](t.me/ZEDthon) 𓆪\n\n"
     "**⎞𝟏⎝** `.للكروبات`  / `.للمجموعات`\n"
     "**بالــࢪد ؏ــلى ࢪســالة نصيــه او وسـائــط تحتهــا نــص**\n"
     "**- لـ اذاعـة رسـالة او ميديـا لكـل المجموعـات اللي انت موجود فيهـا . .**\n\n\n"
@@ -44,7 +44,7 @@ ZelzalPRO_cmd = (
     "**⎞5⎝** `.زاجل`\n"
     "**بالــࢪد ؏ــلى ࢪســالة نصيــه او وسـائــط تحتهــا نــص**\n"
     " **- ارسـال رسـاله اذاعـة الى اشخاص محددة 🕊. .**\n\n"
-    "\n 𓆩 [𝙎𝙊𝙐𝙍𝘾𝞝 𝘼𝙑⍢⃝𝙎𝙊𝙐𝙍𝘾𝞝](t.me/sourceav) 𓆪"
+    "\n 𓆩 [𝙎𝙊𝙐𝙍𝘾𝞝 𝙕𝞝𝘿](t.me/ZedThon) 𓆪"
 )
 
 
@@ -56,8 +56,8 @@ async def cmd(zelzallll):
 
 @zedub.zed_cmd(pattern=f"للكروبات(?: |$)(.*)")
 async def gcast(event):
-    sourceav = event.pattern_match.group(1)
-    if sourceav: #Write Code By T.me/zzzzl1l
+    zedthon = event.pattern_match.group(1)
+    if zedthon: #Write Code By T.me/zzzzl1l
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
     elif event.is_reply:
@@ -97,8 +97,8 @@ async def gcast(event):
 
 @zedub.zed_cmd(pattern=f"للمجموعات(?: |$)(.*)")
 async def gcast(event):
-    sourceav = event.pattern_match.group(1)
-    if sourceav: #Write Code By T.me/zzzzl1l
+    zedthon = event.pattern_match.group(1)
+    if zedthon: #Write Code By T.me/zzzzl1l
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
     elif event.is_reply:
@@ -138,8 +138,8 @@ async def gcast(event):
     
 @zedub.zed_cmd(pattern=f"للخاص(?: |$)(.*)")
 async def gucast(event):
-    sourceav = event.pattern_match.group(1)
-    if sourceav: #Write Code By T.me/zzzzl1l
+    zedthon = event.pattern_match.group(1)
+    if zedthon: #Write Code By T.me/zzzzl1l
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
     elif event.is_reply:

