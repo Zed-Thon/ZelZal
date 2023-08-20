@@ -54,7 +54,7 @@ pymediainfo
 pySmartDL
 pytube
 python-barcode
-pyTelegramBotAPI==3.7.7
+pyTelegramBotAPI==4.12.0
 py-tgcalls==0.9.1
 pytz
 qrcode
