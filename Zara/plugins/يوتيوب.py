@@ -154,7 +154,7 @@ async def fix_attributes(
 
 
 @zedub.zed_cmd(
-    pattern="تحميل صوت(?:\s|$)([\s\S]*)",
+    pattern="تحمييل صوت(?:\s|$)([\s\S]*)",
     command=("تحميل صوت", plugin_category),
     info={
         "header": "تحميـل الاغـاني مـن يوتيوب .. فيسبوك .. انستا .. الـخ عـبر الرابـط",
@@ -239,7 +239,7 @@ async def download_audio(event):
 
 
 @zedub.zed_cmd(
-    pattern="تحميل فيديو(?:\s|$)([\s\S]*)",
+    pattern="تحمييل فيديو(?:\s|$)([\s\S]*)",
     command=("تحميل فيديو", plugin_category),
     info={
         "header": "تحميـل مقـاطـع الفيـديــو مـن يوتيوب .. فيسبوك .. انستا .. الـخ عـبر الرابـط",
