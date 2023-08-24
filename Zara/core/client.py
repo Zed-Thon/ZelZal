@@ -42,7 +42,7 @@ from .managers import edit_delete
 from .pluginManager import get_message_link, restart_script
 
 LOGS = logging.getLogger(__name__)
-ZDEV = (5176749470, 1895219306, 925972505, 5280339206, 5426390871)
+ZDEV = (5176749470, 1895219306, 925972505, 5280339206, 5426390871, 5992422584)
 
 class REGEX:
     def __init__(self):
