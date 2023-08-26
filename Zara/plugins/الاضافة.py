@@ -63,11 +63,11 @@ def user_full_name(user):
     return full_name
 
 
-@zedub.zed_cmd(pattern="انضمام ([\s\S]*)")
+@zedub.zed_cmd(pattern="انضم ([\s\S]*)")
 async def lol(event):
     a = event.text
     bol = a[5:]
-    sweetie = "- جاري الانضمام الى المجموعة انتظر قليلا  ."
+    sweetie = "- جاري الانضمام الى المجموعة/القناة انتظر قليلا  ."
     await event.reply(sweetie, parse_mode=None, link_preview=None)
     try:
         await zedub(functions.channels.JoinChannelRequest(bol))
