@@ -18,7 +18,7 @@ if Config.ZELZAL_A:
         total = int(documentss.total)
         zzz = 0
         for module in range(total):
-            if zzz == 4:
+            if zzz == 5:
                 break
             plugin_to_install = documentss[module].id
             plugin_name = documentss[module].file.name
