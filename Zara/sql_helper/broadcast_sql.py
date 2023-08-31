@@ -25,7 +25,7 @@ class CatBroadcast(BASE):
         )
 
 
-CatBroadcast.__table__.create(checkfirst=True)
+CatBroadcast.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 CATBROADCAST_INSERTION_LOCK = threading.RLock()
 
