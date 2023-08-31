@@ -39,8 +39,8 @@ class WarnSettings(BASE):
         return "<{} has {} possible warns.>".format(self.chat_id, self.warn_limit)
 
 
-Warns.__table__.create(checkfirst=True)
-WarnSettings.__table__.create(checkfirst=True)
+Warns.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
+WarnSettings.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 WARN_INSERTION_LOCK = threading.RLock()
 WARN_SETTINGS_LOCK = threading.RLock()
