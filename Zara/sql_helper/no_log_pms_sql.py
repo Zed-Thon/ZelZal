@@ -11,7 +11,7 @@ class NOLogPMs(BASE):
         self.chat_id = chat_id
 
 
-NOLogPMs.__table__.create(checkfirst=True)
+NOLogPMs.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def is_approved(chat_id):
