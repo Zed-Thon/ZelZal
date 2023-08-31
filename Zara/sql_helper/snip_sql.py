@@ -15,7 +15,7 @@ class Note(BASE):
         self.f_mesg_id = f_mesg_id
 
 
-Note.__table__.create(checkfirst=True)
+Note.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def get_note(keyword):
