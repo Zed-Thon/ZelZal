@@ -25,7 +25,7 @@ class Gdrive(BASE):
         self.cat = cat
 
 
-Gdrive.__table__.create(checkfirst=True)
+Gdrive.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def is_folder(folder_id):
