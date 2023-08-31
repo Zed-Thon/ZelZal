@@ -17,7 +17,7 @@ class Bot_Starters(BASE):
         self.username = username
 
 
-Bot_Starters.__table__.create(checkfirst=True)
+Bot_Starters.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def add_starter_to_db(
