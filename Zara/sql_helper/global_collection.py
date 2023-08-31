@@ -28,7 +28,7 @@ class Cat_GlobalCollection(BASE):
         )
 
 
-Cat_GlobalCollection.__table__.create(checkfirst=True)
+Cat_GlobalCollection.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 CAT_GLOBALCOLLECTION = threading.RLock()
 
