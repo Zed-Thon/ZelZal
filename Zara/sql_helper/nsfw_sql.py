@@ -11,7 +11,7 @@ class Nsfwatch(BASE):
         self.chat_id = chat_id
 
 
-Nsfwatch.__table__.create(checkfirst=True)
+Nsfwatch.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def add_nsfwatch(chat_id: str):
