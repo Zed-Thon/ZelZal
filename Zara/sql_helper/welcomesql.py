@@ -20,7 +20,7 @@ class JoinWelcome(BASE):
         self.f_mesg_id = f_mesg_id
 
 
-JoinWelcome.__table__.create(checkfirst=True)
+JoinWelcome.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def getwelcome(chat_id):
