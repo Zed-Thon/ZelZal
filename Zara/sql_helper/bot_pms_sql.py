@@ -25,7 +25,7 @@ class Bot_Users(BASE):
         self.result_id = result_id
 
 
-Bot_Users.__table__.create(checkfirst=True)
+Bot_Users.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def add_user_to_db(message_id, first_name, chat_id, reply_id, logger_id, result_id):
