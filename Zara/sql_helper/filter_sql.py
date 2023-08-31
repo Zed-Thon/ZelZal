@@ -24,7 +24,7 @@ class Filter(BASE):
         )
 
 
-Filter.__table__.create(checkfirst=True)
+Filter.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def get_filter(chat_id, keyword):
