@@ -27,7 +27,7 @@ class GBan(BASE):
         self.reason = reason
 
 
-GBan.__table__.create(checkfirst=True)
+GBan.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def is_gbanned(chat_id):
