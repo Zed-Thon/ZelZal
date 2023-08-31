@@ -19,7 +19,7 @@ class PmPermit_Sql(BASE):
         self.reason = reason
 
 
-PmPermit_Sql.__table__.create(checkfirst=True)
+PmPermit_Sql.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def approve(user_id, first_name, date, username, reason):
