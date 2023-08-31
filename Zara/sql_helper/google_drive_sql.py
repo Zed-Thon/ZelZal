@@ -12,7 +12,7 @@ class GoogleDriveCreds(BASE):
         self.user = user
 
 
-GoogleDriveCreds.__table__.create(checkfirst=True)
+GoogleDriveCreds.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def save_credentials(user, credentials):
