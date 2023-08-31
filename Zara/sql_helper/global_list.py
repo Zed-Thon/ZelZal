@@ -25,7 +25,7 @@ class CatGloballist(BASE):
         )
 
 
-CatGloballist.__table__.create(checkfirst=True)
+CatGloballist.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 CATGLOBALLIST_INSERTION_LOCK = threading.RLock()
 
