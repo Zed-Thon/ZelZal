@@ -16,7 +16,7 @@ class Cat_GlobalCollection_Json(BASE):
         self.njson = njson
 
 
-Cat_GlobalCollection_Json.__table__.create(checkfirst=True)
+Cat_GlobalCollection_Json.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 
 def get_collection(keywoard):
