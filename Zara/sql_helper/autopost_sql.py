@@ -25,7 +25,7 @@ class Post(BASE):
 
 
 
-Post.__table__.create(checkfirst=True)
+Post.__table__.create(bind=SESSION.get_bind(), checkfirst=True)
 
 POST_FILTER_INSERTION_LOCK = threading.RLock()
 
