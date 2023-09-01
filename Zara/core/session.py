@@ -1,6 +1,6 @@
 import sys
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
-from telethon.errors import AccessTokenExpiredError, AccessTokenInvalidError
+
 from ..Config import Config
 from .bothseesion import bothseesion
 from .client import ZedUserBotClient
@@ -33,18 +33,13 @@ except Exception as e:
     )
     sys.exit()
 
-try:
-    zedub.tgbot = tgbot = ZedUserBotClient(
-        session="ZedTgbot",
-        api_id=Config.APP_ID,
-        api_hash=Config.API_HASH,
-        loop=loop,
-        app_version=__version__,
-        connection=ConnectionTcpAbridged,
-        auto_reconnect=True,
-        connection_retries=None,
-    ).start(bot_token=Config.TG_BOT_TOKEN)
-except AccessTokenExpiredError:
-    LOGS.error("توكن البوت غير صالح قم باستبداله بتوكن جديد من بوت فاذر")
-except AccessTokenInvalidError:
-    LOGS.error("توكن البوت غير صحيح قم باستبداله بتوكن جديد من بوت فاذر")
+zedub.tgbot = tgbot = ZedUserBotClient(
+    session="ZedTgbot",
+    api_id=Config.APP_ID,
+    api_hash=Config.API_HASH,
+    loop=loop,
+    app_version=__version__,
+    connection=ConnectionTcpAbridged,
+    auto_reconnect=True,
+    connection_retries=None,
+).start(bot_token=Config.TG_BOT_TOKEN)
