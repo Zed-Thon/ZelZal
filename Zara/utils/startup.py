@@ -126,7 +126,7 @@ async def mybot():
     zilbot = await zedub.tgbot.get_me()
     bot_name = zilbot.first_name
     botname = f"@{zilbot.username}"
-    if bot_name.endswith("Assistant"):
+    if bot_name.startswith("مسـاعـد"):
         print("تم تشغيل البوت بنجــاح")
     else:
         try:
