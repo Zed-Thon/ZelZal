@@ -19,7 +19,7 @@ else:
 try:
     zedub = ZedUserBotClient(
         session=session,
-        api_id="26388535",
+        api_id=26388535,
         api_hash="20e7eb80fb472a9f75b55f81894cfc16",
         loop=loop,
         app_version=__version__,
@@ -35,7 +35,7 @@ except Exception as e:
 
 zedub.tgbot = tgbot = ZedUserBotClient(
     session="ZedTgbot",
-    api_id="26388535",
+    api_id=26388535,
     api_hash="20e7eb80fb472a9f75b55f81894cfc16",
     loop=loop,
     app_version=__version__,
