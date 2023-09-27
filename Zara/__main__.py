@@ -18,7 +18,7 @@ print(f"المرخصة بموجب شروط  {Zara.__license__}")
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
-    if Config.TG_BOT_TOKEN is None:
+    if Config.API_HASH is None:
         LOGS.info("⌭ جـارِ إضـافة فـارات زدثـون تلقائيـاً ⌭")
         zedub.loop.run_until_complete(autobot())
         LOGS.info("✓ تـم إضـافة الفـارات تلقائيـاً .. بـنجـاح ✓")
@@ -40,6 +40,13 @@ class CatCheck:
     def __init__(self):
         self.sucess = True
 Catcheck = CatCheck()
+
+try:
+    LOGS.info("⌭ جـار تفعيـل وضـع الانـلاين ⌭")
+    zedub.loop.run_until_complete(mybot())
+    LOGS.info("✓ تـم تفعيـل الانـلاين .. بـنجـاح ✓")
+except Exception as e:
+    LOGS.error(f"- {e}")
 
 try:
     LOGS.info("⌭ جـاري تحميـل الملحقـات ⌭")
