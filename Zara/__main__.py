@@ -6,7 +6,7 @@ from telethon import functions
 from .Config import Config
 from .core.logger import logging
 from .core.zedsession import zedub
-from .utils import autobot, saves, mybot
+from .utils import mybot, saves
 from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmessage, verifyLoggerGroup
 
 LOGS = logging.getLogger("Zelzal")
@@ -16,17 +16,6 @@ print(Zara.__copyright__)
 print(f"المرخصة بموجب شروط  {Zara.__license__}")
 
 cmdhr = Config.COMMAND_HAND_LER
-
-try:
-    if Config.API_HASH is None:
-        LOGS.info("⌭ جـارِ إضـافة فـارات زدثـون تلقائيـاً ⌭")
-        zedub.loop.run_until_complete(autobot())
-        LOGS.info("✓ تـم إضـافة الفـارات تلقائيـاً .. بـنجـاح ✓")
-    else:
-        LOGS.info("✓ الفـارات مضـافه .. مسبقـاً ✓")
-except Exception as e:
-    LOGS.error(f"{str(e)}")
-    sys.exit()
 
 try:
     LOGS.info("⌭ بـدء تنزيـل زدثــون ⌭")
