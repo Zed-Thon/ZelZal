@@ -48,6 +48,7 @@ PyMuPDF
 pySmartDL
 python-barcode
 python-dotenv
+pytube==15.0.0
 pytz
 qrcode
 randomstuff.py
@@ -69,11 +70,13 @@ validators
 vcsi
 wand
 wget
-yt_dlp
+youtube-dl
+youtube-search
+youtube-search-python==1.4.9
 
 
 
 git+https://github.com/sandy1709/Telethon@beta
 git+https://github.com/goldsmith/Wikipedia
 git+https://github.com/sandy1709/py-googletrans
-git+https://github.com/alexmercerind/youtube-search-python
+git+https://github.com/yt-dlp/yt-dlp@master
