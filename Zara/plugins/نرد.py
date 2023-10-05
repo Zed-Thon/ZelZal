@@ -184,12 +184,6 @@ async def _(event):
             await event.reply(file=InputMediaDice(emoticon=emoticon))
 
 
-
-@zedub.zed_cmd(pattern=f"احكام(?: |$)(.*)") 
-async def zed(event):
-    await edit_or_reply(event, f"**⪼ عـذراً .. اللعبـه فـي وضـع الصيـانـه سيتـم تحديثهـا لاحقـاً ...⏣**")
-
-
 @zedub.zed_cmd(pattern=f"عقاب(?: |$)(.*)") 
 async def zed(event):
     await edit_or_reply(event, f"**⪼ عـذراً .. اللعبـه فـي وضـع الصيـانـه سيتـم تحديثهـا لاحقـاً ...⏣**")
