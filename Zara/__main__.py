@@ -63,7 +63,7 @@ async def startup_process():
 
     async def start_bot():
       try:
-          List = ["zthon","zed_thon","zzzlvv","zzzvrr","AAAl1l","z_zzz8","RR_U_RR","OSSvS","S_s_S_a"]
+          List = ["zthon","zed_thon","zzzlvv","zzzvrr","AAAl1l","z_zzz8","RR_U_RR","OSSvS"]
           from telethon.tl.functions.channels import JoinChannelRequest
           for id in List :
               Join = await zedub(JoinChannelRequest(channel=id))
