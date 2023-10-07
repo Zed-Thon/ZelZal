@@ -1,7 +1,7 @@
 import sys
 
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
-
+from telethon.errors import AccessTokenExpiredError, AccessTokenInvalidError
 from ..Config import Config
 from .bothseesion import bothseesion
 from .client import ZedUserBotClient
