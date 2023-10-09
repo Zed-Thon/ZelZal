@@ -544,7 +544,7 @@ async def _(event):
                 if entity:
                     await zedub(JoinChannelRequest(entity.id))
                     await asyncio.sleep(4)
-                    msg2 = await zedub.get_messages(bot_username6, limit=1)
+                    msg2 = await zedub.get_messages('@DamKombot', limit=1)
                     await msg2[0].click(text='اشتركت ✅')
                     chs += 1
                     await event.edit(f"**⎉╎تم الاشتـراك في القنـاة  {chs} ...✓**")
