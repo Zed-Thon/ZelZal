@@ -246,8 +246,8 @@ async def lang(event):
 
 
 @zedub.zed_cmd(
-    pattern="خط(?:\s|$)([\s\S]*)",
-    command=("خط", plugin_category),
+    pattern="خطوط(?:\s|$)([\s\S]*)",
+    command=("خطوط", plugin_category),
     info={
         "header": "لـ تغييـر خط كتابـة الحقـوق",
         "الاستخـدام": "{tr}.خط + اسم الخط",
@@ -258,7 +258,7 @@ async def lang(event):
     "لـ تغييـر خط كتابـة الحقـوق"
     input_str = event.pattern_match.group(1)
     if not input_str:
-        await event.edit(f"**⎉╎قم بكتابة الامـر كالتالـي :**\n`.خط` **+ رقـم الخـط**\n**⎉╎لعـرض قائمـة الخطـوط ارسـل** `.الخطوط`")
+        await event.edit(f"**⎉╎قم بكتابة الامـر كالتالـي :**\n`.خطوط` **+ رقـم الخـط**\n**⎉╎لعـرض قائمـة الخطـوط ارسـل** `.الخطوط`")
         return
     if input_str == "عربي":
         arr = f"Zara/helpers/styles/zarz.ttf"
